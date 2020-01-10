@@ -1,0 +1,190 @@
+.rotate_component_root {
+  /*position: relative;*/
+  width: calc(1285px * 0.8);
+  height: calc(875px * 0.8);
+  position: absolute;
+  background: url("../images/rotateicons-bg.png") no-repeat center 5px;
+  /*border: 1px solid #000;*/
+  /*background-size: 70% 80%;*/
+}
+
+/*track*/
+.rotate_component_root .rotate_component_track_wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: rotate3d(2, 0, 1, 60deg);
+}
+
+.rotate_component_track_wrapper .rotate_component_track {
+  position: absolute;
+  border: 2px solid #12ffff;
+  border-radius: 50%;
+  width: calc(1080px * 0.65);
+  height: calc(1080px * 0.65);
+  transform-origin: center;
+  left: 95px;
+  /*top: 200px;*/
+  animation: rotateComponentAnimate 5s infinite forwards linear;
+}
+
+.rotate_component_track_wrapper .rotate_component_track_point {
+  position: absolute;
+  left: 50%;
+  top: -5px;
+  width: 20px;
+  height: 10px;
+  background: #12ffff;
+  border-radius: 50%;
+}
+
+@keyframes rotateComponentAnimate {
+  from {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  to {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+/*rotate-innerTrack*/
+.rotate_component_root .rotate_component_path_word_root {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 60px;
+  top: 170px;
+}
+
+/*rotate-elements*/
+.rotate_component_root .rotate_component_ellipse {
+  position: absolute;
+  width: calc(1080px * 0.65);
+  height: calc(650px * 0.65);
+  /*border: 1px solid #f00;*/
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  transform: translate(150px, 55px) rotate(15deg);
+  transform-origin: 0 0;
+  background: transparent;
+}
+
+.rotate_component_ellipse .item {
+  position: absolute;
+  /*left: calc(45px / 2);*/
+  /*top: calc(440px / 2);*/
+  /*border: 1px solid #f00;*/
+  border-radius: 50%;
+  transform-origin: center;
+  text-align: center;
+  line-height: 180px;
+  /*background: #000;*/
+  color: #ffffff;
+  cursor: pointer;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon_normal.png");
+  transition: background-image 0.3s linear;
+  overflow: hidden;
+}
+
+.rotate_component_ellipse .item.active {
+  background-image: url("../images/icon_active.png");
+}
+
+/*label*/
+.rotate_component_ellipse .item .label {
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.8)
+}
+
+.rotate_component_ellipse .item .value {
+  /*font-size: 24px;*/
+  height: 24px;
+  line-height: 24px;
+  top: 30%;
+}
+
+.rotate_component_ellipse .item .name {
+  font-size: 16px;
+  height: 18px;
+  line-height: 18px;
+  top: 50%;
+}
+
+/*tip*/
+.rotate_component_ellipse .item .tip {
+  position: absolute;
+  min-height: 50px;
+  display: flex;
+  line-height: normal;
+}
+
+.rotate_component_ellipse .item .tip.right {
+  left: 80%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.rotate_component_ellipse .item .tip.bottom {
+  top: 100%;
+  left: 0;
+}
+
+.rotate_component_ellipse .item .tip .triangle {
+  flex: 1;
+  width: 40px;
+  background: url("../images/arrow_toLeft.png") no-repeat center;
+  opacity: 0.5;
+}
+
+.rotate_component_ellipse .item .tip .content {
+  float: left;
+  position: relative;
+  padding: 6px;
+  border: 1px solid #064e6c;
+  box-sizing: border-box;
+  background: rgba(9, 26, 45, 0.8);
+}
+
+.rotate_component_ellipse .item .tip .content .contentContainer {
+  padding: 5px;
+  min-width: 80px;
+  border: 1px solid #064e6c;
+  border-radius: 5px;
+  background: rgba(9, 37, 56, 0.5);
+}
+
+.rotate_component_ellipse .item .tip .content .line {
+  line-height: 29px;
+  border-bottom: 1px dashed #064e6c;
+  font-size: 14px;
+  word-break: keep-all;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.rotate_component_ellipse .item .tip .content .line_part {
+  display: inline-block;
+}
+
+.rotate_component_ellipse .item .tip .content .line .tip_name {
+  margin-right: 5px;
+  text-align: right;
+  display: inline-block;
+}
+
+.rotate_component_ellipse .item .tip .content .line .tip_value {
+  margin-left: 5px;
+  text-align: left;
+  display: inline-block;
+}
+
+
+
+

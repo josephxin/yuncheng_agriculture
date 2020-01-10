@@ -1,0 +1,68 @@
+.internet-bigdata {}
+
+.left-menu {
+    position: absolute;
+    top: 86px;
+    left: 116px;
+    width: 327px;
+    height: 880px;
+    padding-left: 34px;
+    padding-top: 27px;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 2px;
+    .menu-item {
+        width: 262px;
+        height: 83px;
+        margin-bottom: 22px;
+        background-image: url(img/bg.png);
+        background-repeat: no-repeat;
+        .menu-item-icon {
+            float: left;
+            width: 81px;
+            height: 75px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .menu-item-content {
+            float: left;
+            margin-left: 24px;
+            width: 142px;
+            font-size: 16px;
+            color: white;
+            .menu-item-num {
+                margin: 18px 0 8px;
+                line-height: 1;
+                overflow: hidden;
+                >span{
+                    float: left;
+                    max-width: 120px;
+                    padding-right: 5px;
+                    font-size: 28px;
+                    font-weight: bold;
+                    color: #ffa73f;
+                }
+                >i{
+                    float: left;
+                    margin-top: 8px;
+                }
+            }
+            .menu-item-name {
+                line-height: 1;
+            }
+        }
+    }
+}
+.internet-title{
+    position: absolute;
+    top: 100px;
+    left: 1107px;
+    font-size: 26px;
+    color: white;
+}
+.center-map {
+    position: absolute;
+    top: 86px;
+    right: 30px;
+    width: 1447px;
+    height: 880px;
+}

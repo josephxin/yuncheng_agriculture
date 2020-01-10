@@ -1,0 +1,84 @@
+.source-box {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    background-image: url('../img/sy-bg.png');
+    background-repeat: no-repeat;
+    background-position: center 100px;
+    .source-wrap {
+        display: inline-block;
+        border: 1px solid #03619e;
+        border-radius: 5px;
+        background-color: #0d3950;
+        padding: 0 15px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 14px;
+    }
+    .goods-name {
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        position: absolute;
+        top: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .w-item {
+        position: absolute;
+        background-repeat: no-repeat;
+        .greenhouses {
+            margin-top: 10px;
+            display: flex;
+        }
+        .greenhouses-item {
+            width: 50%;
+            padding-top: 60px;
+            text-align: center;
+            display: inline-block;
+            background-repeat: no-repeat;
+            &:last-child {
+                background-image: url('../img/sy-w-right.png');
+            }
+            &:first-child {
+                background-image: url('../img/sy-w-left.png');
+                background-position-x: right;
+            }
+            &.only {
+                width: 100%;
+                background-position: top center;
+                background-image: url('../img/sy-w-center.png');
+            }
+        }
+    }
+    .w-1 {
+        top: 318px;
+        left: 310px;
+        padding-top: 86px;
+        background-image: url('../img/sy-w1.png');
+        .source-wrap,.greenhouses{
+            transform: translateX(-50%);
+        }
+    }
+    .w-2 {
+        top: 318px;
+        left: 775px;
+        padding-top: 86px;
+        background-image: url('../img/sy-w3.png');
+        background-position-x: right;
+        .source-wrap,.greenhouses{
+            transform: translateX(50%);
+        }
+    }
+    .w-3 {
+        top: 392px;
+        left: 50%;
+        padding-top: 50px;
+        background-image: url('../img/sy-w2.png');
+        .source-wrap,.greenhouses{
+            transform: translateX(-50%);
+        }
+    }
+}

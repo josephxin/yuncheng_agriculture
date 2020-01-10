@@ -1,0 +1,84 @@
+.observationDetails {
+    z-index: 500;
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    background-color: #03336f;
+    color: #ccc;
+    padding-bottom: 20px;
+    width: 360px;
+    .observationDetails-head {
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        background-color: #00459b;
+        padding-left: 70px;
+        padding-right: 15px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        position: relative;
+        .close {
+            color: #00fff6;
+            position: absolute;
+            left: 15px;
+            cursor: pointer;
+        }
+        .gis-details-name {}
+    }
+    .observationDetails-item {
+        font-size: 16px;
+        margin-top: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+        display: flex;
+        i {
+            width: 80px;
+            text-align: right;
+            font-style: normal;
+        }
+        span {
+            flex: 1;
+            color: #fff;
+        }
+    }
+    .observationDetails-item3 {
+        font-size: 16px;
+        margin-top: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+        display: flex;
+        i {
+            font-style: normal;
+        }
+        span {
+            flex: 1;
+            width: 0;
+            text-align: left;
+            color: #fff;
+        }
+    }
+    .btn-wrap {
+        margin: 20px 0;
+        text-align: center;
+        >div {
+            display: inline-block;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            background-image: url(img/btn-bg.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            &+div{
+                margin-left: 20px;
+            }
+        }
+    }
+}

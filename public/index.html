@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <script src="%PUBLIC_URL%/static/js/ipConfig.js"></script>
+  <script type="text/javascript" src="http://api.tianditu.gov.cn/api?v=4.0&tk=c2041026d1de31f1b077f6982120aca5"></script>
+  <!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=X3nc1eyw9D0d2AEUWYqRCAD0kUVZxweC"></script>-->
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>运城农业大数据平台</title>
+</head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root">
+
+  </div>
+
+  <script type="x-shader/x-vertex" id="vertexshader">
+    attribute float size;
+    attribute vec4 customColor;
+
+    varying vec4 vColor;
+
+    void main() {
+        vColor = customColor;
+        vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+        gl_PointSize = size * ( 150.0 / length( mvPosition.xyz ) );
+        gl_Position = projectionMatrix * mvPosition;
+    }
+   </script>
+
+  <script type="x-shader/x-fragment" id="fragmentshader">
+    uniform vec3 color;
+
+    varying vec4 vColor;
+    vec3 cLight = normalize(vec3(0.5, 0.5, 1.0));
+
+    void main()
+    {
+        float radius = 0.5;
+        vec2 center = vec2(0.5, 0.5);
+        vec2 position = gl_PointCoord.xy - center;
+        float dist = distance(gl_PointCoord.xy, center);
+        float z = sqrt(radius * radius - position.x * position.x - position.y * position.y);
+        vec3 normal = normalize(vec3(position.x, position.y, z));
+        vec3 c = (normal + 1.0) / 2.0;
+        float diffuse = max(0.0, dot(normal, cLight));
+        if (dist < 0.5) {
+            gl_FragColor = vColor * vec4(vec3(diffuse), 1.0);
+        } else {
+            discard;
+        }
+    }
+    </script>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+.detail-box {
+    padding: 20px 45px 20px 45px;
+    .detail-title {
+        display: flex;
+        justify-content: flex-start;
+        p {
+            font-size: 16px;
+            color: #afd1fe;
+            span {
+                padding: 0 5px;
+            }
+        }
+    }
+    .detail-content {
+        margin-top: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px dotted #2f629c;
+        .detail-ul {
+            display: flex;
+            justify-content: flex-start;
+            li {
+                height: 30px;
+                font-size: 16px;
+                text-align: left;
+                margin: 15px 100px 0 15px;
+                span:first-child {
+                    color: #cfe1ff;
+                }
+                span:last-child {
+                    color: #fff;
+                }
+            }
+        }
+        .detail-checkbox {
+            text-align: left;
+            display: flex;
+            justify-content: flex-start;
+            p {
+                font-size: 16px;
+                color: #cfe1ff;
+                padding-left: 15px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .detail-text {
+        font-size: 16px;
+        color: #fff;
+        text-align: left;
+        span {
+            width: 3px;
+            height: 20px;
+            vertical-align: -4px;
+            margin-right: 10px;
+            display: inline-block;
+            background: #067eff;
+        }
+    }
+}

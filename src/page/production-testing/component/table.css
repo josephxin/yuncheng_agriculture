@@ -1,0 +1,141 @@
+.diy-table-wrap {
+    border-bottom: 1px solid #018d96;
+}
+.diy-table {
+    color: #fff;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    border-collapse: collapse;
+}
+/* 换行 */
+.lineFeed{
+    white-space:normal
+}
+.diy-table td,.diy-table th {
+    font-size: 0;
+}
+.diy-table tr span {
+    width: 100%;
+    margin: 5px 0;
+    padding: 0 10px;
+    font-size: 14px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+/* 表头 */
+.diy-table .diy-table-head {
+    border-top: 2px solid #019098;
+    border-bottom: 2px solid #019098;
+}
+
+.diy-table-head th span {
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(2, 73, 92, .8);
+}
+
+.diy-table-head th:first-child {
+    padding-left: 5px;
+    position: relative;
+}
+
+.diy-table-head th:last-child {
+    padding-right: 5px;
+    position: relative;
+}
+
+.diy-table-head th:first-child::after, .diy-table-head th:first-child::before,
+.diy-table-head th:last-child::after, .diy-table-head th:last-child::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #00fff6;
+    position: absolute;
+}
+
+.diy-table-head th:first-child::after {
+    left: -4px;
+    bottom: -4px;
+}
+
+.diy-table-head th:first-child::before {
+    left: -4px;
+    top: -4px;
+}
+
+.diy-table-head th:last-child::after {
+    right: -4px;
+    bottom: -4px;
+}
+
+.diy-table-head th:last-child::before {
+    right: -4px;
+    top: -4px;
+}
+
+/* 内容 */
+.diy-table-body td span {
+    line-height: 28px;
+}
+.diy-table-body td span.red{
+	color: #ff3f2b;
+}
+.diy-table-body td span.yellow{
+	color: #fff000;
+}
+.diy-table-body td span.orange{
+	color: #ff954e;
+}
+.diy-table-body td span.green{
+	color:green;
+}
+tbody td:first-child {
+    padding-left: 13px;
+}
+
+tbody td:last-child {
+    padding-right: 5px;
+}
+
+/* 高亮效果 */
+.diy-table-body:hover td {
+    color: #e5da37;
+}
+
+.diy-table-body:hover td:first-child span {
+    color: #192039;
+    background-color: #e5da37;
+    position: relative;
+}
+
+.diy-table-body:hover td:first-child span::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 100%;
+    background-color: #e5da37;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -8px;
+}
+
+/* 滚动 */
+.diy-table .diy-hide  {
+    border-top:0;
+    border-bottom:0;
+    overflow: hidden;
+}
+.diy-table .diy-hide span {
+    margin: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+.diy-table .diy-hide th:first-child::after, .diy-hide th:first-child::before,
+.diy-table .diy-hide th:last-child::after, .diy-hide th:last-child::before {
+    display: none;
+}

@@ -1,0 +1,59 @@
+.chartBox {
+    position: relative;
+}
+
+.chartContent {
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    line-height: 38px;
+}
+
+.chartContent > span {
+    padding-left: 2px;
+}
+
+.chartContent:nth-child(1) {
+    top: 53px;
+    left: 25px;
+}
+
+.chartContent:nth-child(2) {
+    top: 15px;
+    left: 230px;
+}
+
+.chartContent:nth-child(3) {
+    top: 91px;
+    left: 223px;
+}
+
+.chartContent:nth-child(4) {
+    top: 5px;
+    left: 430px;
+}
+
+.chartContent:nth-child(5) {
+    top: 61px;
+    left: 430px;
+}
+
+.chartContent:nth-child(6) {
+    top: 34px;
+    left: 660px;
+}
+
+.chartContent:nth-child(7) {
+    top: 90px;
+    left: 660px;
+}
+
+.chartContent:nth-child(8) {
+    top: 153px;
+    left: 25px;
+}
+
+.chartContent:nth-child(9) {
+    top: 155px;
+    left: 385px;
+}

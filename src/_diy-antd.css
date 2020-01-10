@@ -1,0 +1,326 @@
+.ant-input {
+	height: 32px;
+	background-color: transparent;
+	color: #01d6c2;
+	font-size: 16px;
+	border-radius: 0;
+	border: 1px solid #01d6c2;
+}
+
+.ant-input:focus,
+.ant-input:hover {
+	border-color: #01d6c2;
+}
+
+.ant-calendar-picker-icon {
+	color: #01d6c2;
+}
+
+.ant-calendar-picker {
+	width: 200px;
+}
+
+.ant-input-search-icon {
+	color: #ccc;
+}
+
+.ant-input-search-icon:hover {
+	color: #2cfef5;
+}
+
+.ant-table-scroll {
+	border-bottom: 1px solid #019098
+}
+
+.ant-table-thead>tr:first-child>th:first-child {
+	border-top-left-radius: 0;
+}
+
+.ant-table-thead>tr:first-child>th:last-child {
+	border-top-right-radius: 0;
+}
+
+.ant-table-thead>tr>th {
+	background-color: #084899;
+	color: #fff;
+	border-bottom: 0;
+	font-size: 16px;
+	padding: 10px 5px;
+}
+
+.ant-table-tbody>tr {
+	border-bottom: 1px dashed #05508d;
+}
+
+.ant-table-tbody>tr:last-of-type {
+	border-bottom: 0;
+}
+
+.ant-table-tbody>tr>td {
+	background-color: #07366e;
+	color: #cccccc;
+	border-bottom: 0;
+	font-size: 14px;
+	padding: 7px 5px;
+}
+
+.ant-table-thead>tr>th,
+.ant-table-tbody>tr>td {
+	text-align: center;
+}
+
+.ant-table-tbody>tr.ant-table-row:hover>td {
+	background-color: #07366e;
+}
+
+.ant-calendar-picker-clear,
+.ant-cascader-picker-clear {
+	border-radius: 50%;
+}
+
+.ant-cascader-picker-arrow,
+.ant-select-arrow-icon {
+	color: #01d6c2;
+}
+
+.ant-cascader-picker {
+	background-color: transparent;
+	color: #01d6c2;
+	vertical-align: middle;
+}
+
+
+.ant-table-fixed-header>.ant-table-content>.ant-table-scroll>.ant-table-body {
+	background: #07366e;
+}
+
+.ant-cascader-menu {
+	height: 190px;
+}
+
+
+/*分页器样式*/
+
+.ant-pagination {
+	color: #fff;
+}
+
+.ant-pagination-simple .ant-pagination-simple-pager input {
+	color: #333;
+}
+
+.ant-pagination.mini .ant-pagination-item a {
+	color: #fff;
+}
+
+.ant-pagination.mini .ant-pagination-item-active a {
+	color: #1890ff;
+}
+
+.ant-pagination-item:focus a,
+.ant-pagination-item:hover a {
+	color: #1890ff;
+}
+
+.ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-ellipsis,
+.ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis {
+	color: #fff;
+}
+
+.ant-pagination.mini .ant-pagination-prev a,
+.ant-pagination.mini .ant-pagination-next a {
+	color: #fff;
+}
+
+.ant-select {
+	vertical-align: top;
+}
+
+.ant-select-selection {
+	background-color: transparent;
+	border-color: #01d6c2;
+	border-radius: 0;
+	color: #01d6c2;
+}
+
+
+/*
+.ant-calendar-picker {
+	width: 300px;
+}
+*/
+
+.ant-calendar-picker .ant-input {
+	font-size: 14px;
+}
+
+.ant-calendar-range-picker-separator {
+	color: #fff;
+}
+
+
+/* 日期选择框 */
+
+.zent-datetime-picker .zent-input,
+.zent-select-text {
+	color: #00f6de!important;
+	border: 1px solid #1482c8!important;
+	background: #0b4d92!important;
+}
+
+.zent-datetime-picker .picker-input {
+	background: #0b4d92!important;
+}
+
+.zent-datetime-picker .zent-input::-webkit-input-placeholder,
+.zent-select-placeholder {
+	color: #fff!important;
+}
+
+.zent-datetime-picker .picker-input .zenticon {
+	color: #00f6de !important;
+}
+
+.zent-datetime-picker .picker-input {
+	height: 32px !important;
+	line-height: 32px !important;
+}
+
+.zent-input-wrapper {
+	height: 32px !important;
+}
+
+.ant-btn-primary {
+	padding: 0 20px;
+	border-color: #1E73C8;
+	background: -webkit-linear-gradient(left, #1D559A, #1D549A);
+	/* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(right, #1D559A, #1D549A);
+	/* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(right, #1D559A, #1D549A);
+	/* Firefox 3.6 - 15 */
+	background: linear-gradient(to right, #1D559A, #1D549A);
+	/* 标准的语法 */
+}
+
+.ant-btn-primary:hover {
+	background: #1D559A
+}
+
+.ant-btn-primary:active,
+.ant-btn-primary.active,
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+	background: #1D559A
+}
+
+.ant-btn {
+	border-radius: 0
+}
+
+
+/*table样式更改*/
+.ant-table-fixed-header>.ant-table-content>.ant-table-scroll>.ant-table-body {
+	background: transparent;
+    margin-top: 5px;
+}
+
+.ant-table-thead>tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td,
+.ant-table-tbody>tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td,
+.ant-table-thead>tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td,
+.ant-table-tbody>tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td {
+	background: rgba(7, 42, 81, 1);
+}
+
+.ant-table-tbody>tr>td {
+	background-color: transparent;
+	padding: 10px 0px;
+}
+
+.ant-table-thead>tr>th {
+	background-color: #094D5F;
+}
+
+.ant-table-header {
+	background: transparent;
+}
+
+.ant-table-content>.ant-table-scroll>.ant-table-header>table {
+	border-top: 2px solid #019098;
+	border-bottom: 2px solid #019098;
+    background: rgba(2, 73, 92, .8);
+}
+
+.ant-table-thead>tr>th {
+	/*height: 35px;*/
+	/*line-height: 35px;*/
+	background-color: rgba(2, 73, 92, .8);
+	/*padding: 5px;*/
+}
+
+.ant-table-body>table {
+	margin-top: 3px;
+}
+
+.ant-table-thead>tr>th>span {
+	width: 100%;
+	margin: 5px 0;
+	font-size: 14px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.ant-table-fixed-header .ant-table-scroll .ant-table-header {
+	overflow: auto !important;
+}
+
+
+/* 和谐农村-走马灯 */
+.ant-carousel .slick-slide {
+    text-align: center;
+    height: 210px;
+    line-height: 210px;
+    background: #364d79;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.ant-carousel .slick-slide h3 {
+    color: #fff;
+}
+
+/*二级下钻页面复选框样式*/
+.detail-box .ant-checkbox-group{
+    margin-top: 15px;
+}
+.detail-box .ant-checkbox-disabled + span{
+    color: #cfe1ff;
+}
+.detail-box .ant-checkbox-group-item{
+    margin-right: 60px;
+    margin-left: 15px;
+}
+
+.detail-box .ant-checkbox-disabled .ant-checkbox-inner{
+    width: 20px;
+    height: 20px;
+    background-color: #02688a;
+    border-color: #43a4ff !important;
+}
+.detail-box .ant-checkbox-disabled.ant-checkbox-checked .ant-checkbox-inner::after{
+    border-color: #fff;
+    font-size: 16px;
+}
+.detail-content .ant-checkbox-group{
+    display: flex;
+}
+.ant-carousel .slick-slide img{
+    width: 420px;
+    height: 210px;
+    cursor: pointer;
+}
+.ant-table-placeholder{
+    background: transparent;
+    color:#ffffff;
+    border-top: none;
+}

@@ -1,0 +1,67 @@
+.createUl {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	top: 36px;
+	left: 40%;
+	transform: translateX(-50%);
+}
+
+.createUl>li {
+	padding-left: 20px;
+	white-space: nowrap;
+	flex: 1;
+	font-size: 14px;
+	color: #fff;
+	position: relative;
+}
+
+.createUl>li+li {
+	margin-left: 20px;
+}
+
+.createUl>li::before {
+	content: '';
+	width: 16px;
+	height: 10px;
+	display: block;
+	position: absolute;
+	top: 7px;
+	left: 0;
+}
+
+.createUl>li:nth-child(1)::before {
+	background: #0aa4d4;
+}
+
+.createUl>li:nth-child(2)::before {
+	background: #33dfa8;
+}
+
+.createUl>li:nth-child(3)::before {
+	background: #28dd5f;
+}
+
+.createUl>li:nth-child(4)::before {
+	background: #fffd04;
+}
+
+.createUl>li:nth-child(5)::before {
+	background: orange;
+}
+.createUl>li:nth-child(6)::before {
+	background: #f02f5e;
+}
+.tipBox {
+	
+}
+
+.tipBox>h4 {
+	font-size: 16px;
+	color: #fff;
+}
+
+.tipUl {
+	font-size: 14px;
+	color: #fff;
+}

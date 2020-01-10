@@ -1,0 +1,17 @@
+.moveBox {
+  position: relative;
+  transform: perspective(800px) translate3d(0, 0px, 0px) scale(0.8);
+  animation: move 7s linear .8s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: perspective(800px) translate3d(0, 0px, 0px) scale(0.8);
+  }
+  50% {
+    transform: perspective(800px) translate3d(0, -40px, 0px) scale(0.8);
+  }
+  100% {
+    transform: perspective(800px) translate3d(0, 0px, 0px) scale(0.8);
+  }
+}

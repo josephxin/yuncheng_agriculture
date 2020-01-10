@@ -1,0 +1,18 @@
+.createRatingTitle {
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  top:100px;
+}
+
+.createRatingTitle::before {
+  content: '';
+  position: absolute;
+  left:-20px;
+  top:5px;
+  width: 10px;
+  height: 10px;
+  background: #0661b5;
+  border: 1px solid #047de3;
+  border-radius:50%;
+}

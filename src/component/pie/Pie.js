@@ -1,0 +1,228 @@
+/**
+ * Created by admin on 2018-12-12.
+ */
+import React from 'react';
+import echarts from 'echarts';
+import './vender/echarts-liquidfill';
+
+class Pie extends React.Component {
+  constructor(props) {
+    super();
+    this.state = {
+      seriesData:[{value:38,name:'粮食'},{value:40,name:'油料'},{value:60,name:'蔬菜'},{value:32,name:'水果'},{value:30,name:'其他'}]
+    };
+    const style = props.style || {};
+    this._containerStyle = {
+      position: 'absolute',
+      width: style.width ? `${style.width}px` : '100%',
+      height: style.height ? `${style.height}px` : '100%',
+      left: `${style.left || 0}px`,
+      top: `${style.top || 0}px`,
+      zIndex:`${style.zIndex || ''}`,
+    };
+  }
+
+
+  _setData(d) {
+    this.setState(d)
+  }
+
+  componentDidMount() {
+    this.chart = echarts.init(this._chart);
+  }
+
+  componentDidUpdate() {
+    if (this.state) {
+      let chart = this.chart;
+      chart.off('click');
+      const me = this;
+      let legendData = [];
+      let allValue = 0;
+      this.state.seriesData.map((item)=>{
+        legendData.push(item.name);
+        allValue=allValue + item.value;
+      })
+      let option = {
+        tooltip: {
+            trigger: 'item',
+            formatter: "{b}: {d}%"
+        },
+        legend: {
+          show: true,
+          orient: 'vertical',
+          itemHeight: 10,
+          top:'middle',
+          right:50,
+          icon: "circle",
+          // formatter: function (name) {
+          //   let text;
+          //   me.state.seriesData.map((item, index) => {
+          //     if (item.name == name) {
+          //       text = name +' ('+ (item.value / 200*100).toFixed(0) + '%)'
+          //     }
+          //   });
+          //   return text;
+          // },
+          textStyle: {
+            color: '#fff',
+            fontSize: 16,
+          },
+          data: legendData
+        },
+        series: [
+          {
+            name: '',
+            type: 'pie',
+            color: ["#0297ff", "#00cfff", "#2bfdb6", "#28dd5f", "#fffd04", "#08eafb"],
+            radius: ['40%', '55%'],
+            center: ["30%", "55%"],
+            hoverAnimation: false,
+            label: {
+              normal: {
+                show: false
+              }
+            },
+            labelLine: {
+              normal: {
+                show: false,
+              }
+            },
+            data: me.state.seriesData,
+            itemStyle: {
+              normal: {
+                borderWidth: 2,
+                borderColor: 'rgb(8,41,94)'
+              }
+            },
+          },
+          {
+            name: '',
+            type: 'pie',
+            radius: ['58%', '58%'],
+            center: ["30%", "55%"],
+            silent: true,
+            hoverAnimation: false,
+            label: {
+              normal: {
+                show: false,
+              }
+            },
+            labelLine: {
+              normal: {
+                show: false,
+                length: 5,
+                length2: 0
+              }
+            },
+            itemStyle: {
+              normal: {
+                color: "rgba(255,255,255,0)"
+              }
+            },
+            data: me.state.seriesData,
+          },
+          {
+            type: 'liquidFill',
+            data: [0, 0],
+            radius: '40%',
+            silent: true,
+            // 水球颜色
+            color: ['rgba(6,102,138,.8)', 'rgba(6,102,138,.6)'],
+            center: ["30%", "55%"],
+            label: {
+              normal: {
+                textStyle: {
+                  color: '#fff',
+                  insideColor: 'rgba(6,102,138,1)',
+                  fontSize: 35
+                }
+              }
+            },
+            outline: {
+              show: false
+            },
+            // 内图 背景色 边
+            backgroundStyle: {
+              color: 'transparent',
+            }
+          }
+        ]
+      };
+
+      function showLabel(params) {
+        let label = {
+          normal: {
+            show: false,
+            textStyle: {
+              color: '#fff'
+            }
+          }
+        };
+        let itemStyle = {
+          normal: {
+            borderColor: '#00447e',
+            borderWidth: 7,
+          }
+        };
+
+        let data = [];
+        me.state.seriesData.map((item, index) => {
+          let obj = {
+            name: item.name,
+            value: item.value
+          };
+          if (item.name == params.name) {
+            obj.label = label;
+            obj.itemStyle = itemStyle;
+          }
+          data.push(obj);
+        });
+        chart.setOption({
+          series: [{},
+            {
+              data: data
+            },
+            {
+              data: [params.percent / 100, params.percent / 90]
+            }
+          ]
+        });
+      }
+
+      chart.setOption(option,true);
+
+      chart.on('mouseover', function (params) {
+        if (params.seriesType === 'pie') {
+          showLabel(params);
+        }
+      });
+      /*默认选中第一项*/
+      let initParams={...me.state.seriesData[0],percent:(Math.ceil(me.state.seriesData[0].value / allValue * 100))};
+      showLabel(initParams);
+      chart.on('click',function(params){
+        console.log(params);
+        me.props.getPieClick(params);
+        showLabel(params);
+      });
+      
+
+    }
+  }
+
+
+  render() {
+    return (
+      <div ref={ref => this._chart = ref} style={this._containerStyle}>
+
+      </div>
+    )
+  }
+
+  componentWillUnmount() {
+    if (this.chart) {
+      this.chart.dispose()
+    }
+  }
+}
+
+export default Pie

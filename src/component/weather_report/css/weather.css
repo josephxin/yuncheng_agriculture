@@ -1,0 +1,198 @@
+.weather-report {
+    width: 400px;
+    height: 474px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.weather-report-top {
+    position: relative;
+    height: 116px;
+}
+
+.weather-report-top .title {
+    display: flex;
+	align-items: center;
+    justify-content: center;
+    padding: 18px 0 10px;
+    line-height: 1;
+}
+
+.weather-report-top .title span {
+    margin-right: 35px;
+    text-align: right;
+}
+
+.weather-report-top .title i {
+    font-style: normal;
+}
+
+.weather-report-top .content {
+    display: flex;
+	align-items: center;
+    justify-content: center;
+}
+
+.weather-report-top .content .img {
+    margin-right: 35px;
+    text-align: right;
+}
+
+.weather-report-top .content .oc {
+
+}
+
+.font-size-36 {
+    font-size: 36px;
+}
+
+.x-linear:before {
+    content: attr(text);
+    position: absolute;
+    z-index: 10;
+    color: #00fdff;
+    -webkit-mask: linear-gradient(to top, #00fdff, transparent);
+}
+
+.weather-report-bottom {
+	text-align: center;
+	padding:0 7px;
+    padding-bottom: 11px;
+    overflow: hidden;
+	background-color: rgba(11,62,128,.4);
+}
+
+.x-color {
+    color: #00f5f0;
+}
+
+.x-rotate {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to bottom, transparent, #1165c7b3);
+    transform-origin: bottom;
+    transform: perspective(200px) rotateX(50deg);
+}
+
+.x-rotate2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(to bottom, transparent, #1165c7b3);
+    transform-origin: bottom;
+    transform: perspective(200px) rotateX(76deg);
+}
+
+/*x-item*/
+.x-item {
+    display: inline-block;
+    margin: 0 7px;
+    margin-bottom: 6px;
+    width: 110px;
+    height: 154px;
+    text-align: center;
+}
+
+.x-item>h5 {
+    height: 24px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.x-item>div {
+    position: relative;
+    border: 1px solid #0f5dbf;
+    padding: 7px;
+    background-color: rgba(11,62,128,.8);
+}
+
+.x-bar {
+    position: absolute;
+    top: 53px;
+    height: 15px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+.left-bar {
+    left: -1px;
+    border-left: 3px solid #00fff6;
+}
+
+.right-bar {
+    right: -1px;
+    border-right: 3px solid #00fff6;
+}
+
+.x-corner {
+    position: absolute;
+    bottom: -1px;
+    width: 5px;
+    height: 5px;
+    border-bottom: 2px solid #00fff6;
+}
+
+.left-corner {
+    left: -1px;
+    border-left: 2px solid #00fff6;
+}
+
+.right-corner {
+    right: -1px;
+    border-right: 2px solid #00fff6;
+}
+
+.x-line {
+    position: absolute;
+    top: -0.5px;
+    width: 10px;
+    border-top: 1px dotted #0b499d;
+}
+
+.left-line {
+    left: 0px;
+    transform-origin: center left;
+    transform: rotateZ(45deg);
+}
+
+.right-line {
+    right: 0px;
+    transform-origin: center right;
+    transform: rotateZ(-45deg);
+}
+
+.x-item-content {
+    border: 1px solid #0d4ea4;
+    padding: 11px 0;
+}
+
+.x-item-content>div {
+    height: 20px;
+}
+
+.x-item-content>div img {
+    height: 20px;
+}
+
+.x-item-content>div img:first-of-type {
+    margin-right: 12px;
+}
+
+.x-item-content>p {
+    margin-top: 7px;
+    line-height: 1;
+	overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+
+.seven-day {
+    text-align: right;
+    line-height: 27px;
+    padding-right: 15px;
+}

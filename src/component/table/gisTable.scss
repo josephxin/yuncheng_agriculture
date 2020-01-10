@@ -1,0 +1,106 @@
+.gis-table-wrap{
+    padding: 25px 30px;
+    background-color: #032c66;
+    position: absolute;
+    right: 150px;
+    top: 160px;
+    z-index: 11;
+    .git-head {
+        display: flex;
+        .git-head-item {
+            flex: 1;
+            p{
+                height: 20px;
+                line-height: 20px;
+                margin-bottom: 10px;
+                text-align: center;
+                font-size: 14px;
+                color: white;
+                span {
+                    font-size: 22px;
+                }
+                &.blue {
+                    color: #09b1ff;
+                }
+                &.orange {
+                    color: #e79a55;
+                }
+            }
+        }
+    }
+    .gis-table {
+        color: #fff;
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+        border-collapse: collapse;
+        .gis-table-head {
+            height: 40px;
+            line-height: 40px;
+            background-color: #084899;
+            th {
+                font-size: 16px;
+            }
+        }
+        .gis-table-tbody{
+            height: 400px;
+            overflow: auto;
+        }
+        .gis-table-body {
+            height: 35px;
+            line-height: 35px;
+            border-bottom: 1px dashed #054f8c;
+            background-color: #08366f;
+            font-size: 14px;
+            td{
+                color: #cccccc;
+                &:last-child {
+                    color: #e7c14a;
+                }
+                span{
+                	color: #4ac5ff;
+                	text-decoration: underline;
+                	cursor: pointer;
+                }
+            }
+        }
+        td,th {
+            padding: 0 15px;
+        }
+    }
+    .git-body {
+        position: relative;
+    }
+    .gis-table-details {
+        position: absolute;
+        top:0;
+        bottom:0;
+        left: 0;
+        right: 0;
+        background-color: #03336f;
+        color: #ccc;
+        .gis-details-head {
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 18px;
+            color: #fff;
+            background-color: #00459b;
+            padding: 0 15px;
+
+            span {
+                color: #00fff6;
+                float: left;
+                cursor: pointer;
+            }
+        }
+        .gis-details-item {
+            padding-left: 100px;
+            font-size: 16px;
+            margin-top: 15px;
+            span{
+                color: #fff;
+            }
+        }
+    }
+}

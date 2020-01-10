@@ -1,0 +1,163 @@
+.ant-carousel {
+  margin-top:98px;
+    width:250px!important;
+    overflow:visible!important;
+    z-index:2!important;
+}
+.slick-slider .slick-initialized{
+  width:250px!important;
+    overflow:visible!important;
+}
+.slick-list{
+  overflow:visible!important;
+}
+.ant-carousel .slick-slide {
+  text-align: center;
+  width:250px!important;
+  height: 220px;
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide dl {
+  width:230px!important;
+  height: 220px;
+  color: #2fdeff;
+}
+.ant-carousel .slick-slide dl dt{
+  display:flex;
+  align-items:center;
+  background:#fff;
+  height:170px;
+  border:2px solid #2779cf;
+  overflow: hidden;
+}
+.ant-carousel .slick-slide dl dt img{
+  width:100%;
+}
+.ant-carousel .slick-slide dl dd{
+  height:40px;
+  line-height:40px;
+}
+.list{
+  margin-top:60px;
+  width: 1350px;
+  display: flex;
+  overflow: hidden;
+}
+.list>div {
+  width:250px;
+  height: 220px;
+}
+.list dl {
+  width:230px;
+  height: 220px;
+  color: #2fdeff;
+}
+.list dl dt{
+  width:100%;
+  height:170px;
+  display:flex;
+  align-items:center;
+  background:#fff;
+  border:2px solid #2779cf;
+  overflow: hidden;
+}
+.list dl dt img{
+  width:100%;
+}
+.list dl dd{
+  height:40px;
+  line-height:40px;
+  text-align: center;
+}
+.nodata1{
+  margin-top:60px;
+  width: 447px;
+  text-align: center;
+  height: 220px;
+  line-height: 220px;
+  font-size: 26px;
+  color: #2fdeff;
+}
+.slick-track{
+  z-index:999!important;
+}
+.imgdiv .ant-carousel .slick-dots{
+  left:224px !important;
+}
+.ant-carousel .slick-dots {
+    position: absolute;
+    left:692px;
+    transform: translateX(-50%);
+    bottom: -38px;
+    display: block;
+    width: 250px;
+    height: 7px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    // overflow-x: hidden;
+}
+.ant-carousel .slick-dots li {
+  position: relative;
+  display: inline-block;
+  margin: 0 7px;
+  padding: 0;
+  text-align: center;
+  vertical-align: top;
+}
+.ant-carousel .slick-dots li button {
+  display: block;
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  color: transparent;
+  font-size: 0;
+  background: #09d9db;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.ant-carousel .slick-dots li.slick-active button {
+  width: 24px;
+  background: #00fdff;
+  opacity: 1;
+}
+//切换按钮
+.prev{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom:32px;
+  left: 550px;
+}
+.next{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom:32px;
+  left: 817px;
+}
+.prev1{
+  width: 45px;
+  height: 45px;
+  position: absolute;
+      top: 318px;
+    left: 113px;
+  transform: translateY('-50%');
+}
+.next1{
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 318px;
+  left: 315px;
+  transform: translateY('-50%');
+}
+
+

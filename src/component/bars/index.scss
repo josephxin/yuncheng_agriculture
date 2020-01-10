@@ -1,0 +1,30 @@
+.bars{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    .bar {
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 60px;
+        color: #fff;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        padding-left: 60px;
+        span{
+            color: #f5bb04;
+            font-weight: bold;
+        }
+    }
+    .bar:nth-child(-n+2) span {
+        color: #2fdeff;
+    }
+    .bar:nth-child(n+5) span {
+        color: #5fe300;
+    }
+}

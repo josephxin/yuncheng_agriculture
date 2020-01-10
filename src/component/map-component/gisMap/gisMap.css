@@ -1,0 +1,21 @@
+.tdt-overlay-pane {
+	z-index: 700;
+}
+
+.tdt-label {
+	left: 30px;
+	background-color: rgba(0, 0, 0, .5);
+	border: 1px solid #00f6de;
+	color: #fff;
+	padding: 5px 10px;
+}
+
+.harmonious-gismap .tdt-label {
+	left: 20px;
+	top: 14px;
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	padding: 0;
+	box-shadow: none;
+}

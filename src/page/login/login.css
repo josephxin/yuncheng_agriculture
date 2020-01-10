@@ -1,0 +1,35 @@
+.login {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	text-align: center;
+}
+
+.login-title {
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+
+.x-input {
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+.ant-input-affix-wrapper .ant-input-prefix,
+.ant-input-affix-wrapper .ant-input-suffix {
+	color: rgba(1, 214, 194, .8) !important;
+}
+
+
+.ant-input-clear-icon,
+.ant-input-password-icon {
+	color: rgba(1, 214, 194, .8) !important;
+}
+
+.ant-input-password-icon:hover {
+	color: rgba(1, 214, 194, .8) !important;
+}

@@ -1,0 +1,307 @@
+@import '~animate.css';
+.App {
+	width: 1920px;
+	height: 1080px;
+	background: url("/static/image/bg.png") no-repeat center;
+	position: relative;
+}
+
+.projectTitle {
+	width: 500px;
+	font-size: 32px;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	margin-left: -250px;
+	text-align: center;
+	top: 10px;
+}
+
+.nav-wrap {
+	position: absolute;
+	bottom: 20px;
+	left: 372px;
+	z-index: 9
+}
+
+.nav-wrap .nav-list {
+	display: flex;
+}
+
+.nav-wrap .nav-list li {
+	width: 140px;
+	height: 42px;
+	background: url('/static/image/icon2.png') no-repeat;
+	text-align: center;
+	line-height: 42px;
+	margin-left: 5px;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.nav-wrap .nav-list li:first-child {
+	background: url('/static/image/icon1.png') no-repeat;
+}
+
+.nav-wrap .nav-list li:last-child {
+	background: url('/static/image/icon3.png') no-repeat;
+}
+
+.nav-wrap .nav-list li div {
+	position: relative;
+	width: 140px;
+	height: 42px;
+	font-size: 16px;
+	color: #00ffe4;
+}
+
+.nav-wrap .nav-list li div p {
+	padding-left: 35px;
+}
+
+.nav-wrap .nav-list li:nth-child(7) div i {
+	left: 2px;
+}
+
+.nav-wrap .nav-list li:nth-child(7) div p,
+.nav-wrap .nav-list li:nth-child(9) div p {
+	padding-left: 30px;
+}
+.nav-wrap .nav-list li:nth-child(8) div p{
+    padding-left: 20px;
+}
+
+.nav-wrap .nav-list li div i {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 18px;
+	width: 25px;
+	height: 22px;
+	background: url('/static/image/nav1.png');
+	background-repeat: no-repeat;
+}
+
+.nav-wrap .nav-list li:nth-child(2) div i {
+	background: url('/static/image/nav2.png');
+}
+
+.nav-wrap .nav-list li:nth-child(3) div i {
+	background: url('/static/image/nav3.png');
+}
+
+.nav-wrap .nav-list li:nth-child(4) div i {
+	background: url('/static/image/nav4.png');
+}
+
+.nav-wrap .nav-list li:nth-child(5) div i {
+	background: url('/static/image/nav5.png');
+}
+
+.nav-wrap .nav-list li:nth-child(6) div i {
+	background: url('/static/image/nav6.png');
+}
+
+.nav-wrap .nav-list li:nth-child(7) div i {
+	background: url('/static/image/nav7.png');
+}
+
+.nav-wrap .nav-list li:nth-child(8) div i {
+	background: url('/static/image/nav8.png');
+	left: -1px;
+}
+
+.nav-wrap .nav-list li:nth-child(9) div i {
+	background: url('/static/image/nav9.png');
+	left: 2px;
+}
+
+.nav-wrap .nav-list li:nth-child(1).current {
+	background: url('/static/image/icon1-select.png');
+}
+
+.nav-wrap .nav-list li.current,
+.nav-wrap .nav-list li:hover {
+	background: url('/static/image/icon2-select.png');
+	transform: scale(1.05);
+}
+
+.nav-wrap .nav-list li:last-child.current {
+	background: url('/static/image/icon3-select.png');
+}
+
+.nav-wrap .nav-list li.current div {
+	color: #fff;
+}
+
+.nav-wrap .nav-list li:nth-child(1).current div i {
+	background: url('/static/image/nav1-select.png');
+}
+
+.nav-wrap .nav-list li:nth-child(2).current div i {
+	background: url('/static/image/nav2-select.png');
+}
+
+.nav-wrap .nav-list li:nth-child(3).current div i {
+	background: url('/static/image/nav3-select.png');
+}
+
+.nav-wrap .nav-list li:nth-child(4).current div i {
+	background: url('/static/image/nav4-select.png');
+}
+
+.nav-wrap .nav-list li:nth-child(5).current div i {
+	background: url('/static/image/nav5-select.png');
+}
+
+.nav-wrap .nav-list li:nth-child(6).current div i {
+	background: url('/static/image/nav6-select.png');
+}
+
+.nav-wrap .nav-list li:nth-child(7).current div i {
+	background: url('/static/image/nav7-select.png');
+}
+
+.nav-wrap .nav-list li:nth-child(8).current div i {
+	background: url('/static/image/nav8-select.png');
+}
+
+.nav-wrap .nav-list li:nth-child(9).current div i {
+	background: url('/static/image/nav9-select.png');
+}
+
+.nav-wrap .nav-list li.current div::after {
+	content: '';
+	width: 130px;
+	height: 3px;
+	background: #00fff6;
+	display: block;
+	margin-top: 7px;
+	margin-left: 5px
+}
+
+.nav-wrap .nav-list li:first-child.current div::after {
+	width: 111px;
+	margin-left: 25px
+}
+
+.nav-wrap .nav-list li:last-child.current div::after {
+	width: 105px;
+	margin-left: 2px
+}
+
+.showTime {
+	font-size: 14px;
+	color: #00fff6;
+	position: absolute;
+	right: 40px;
+	top: 52px;
+}
+
+.text-color {
+	background: linear-gradient(to bottom, #fff 0%, #fff 30%, #00f7ff 100%);
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+
+/* 加载中…… */
+
+.ant-spin-spinning {
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.ant-spin-lg .ant-spin-dot {
+	width: 50px;
+	height: 50px;
+	font-size: 50px;
+}
+
+.ant-spin.ant-spin-show-text .ant-spin-text {
+	padding-top: 10px;
+	font-size: 24px;
+}
+
+.logout {
+	z-index: 20;
+	position: absolute;
+	top: 4px;
+	right: 30px;
+	font-size: 18px;
+	color: #00fff6;
+	padding: 0 10px;
+	cursor: pointer;
+	opacity: .8;
+}
+
+.backHomePage {
+	z-index: 20;
+	position: absolute;
+	top: 4px;
+	right: 100px;
+	font-size: 18px;
+	color: #00fff6;
+	padding: 0 10px;
+	cursor: pointer;
+	opacity: .8;
+}
+
+.backModleChange {
+	z-index: 20;
+	position: absolute;
+	top: 4px;
+	right: 170px;
+	font-size: 18px;
+	color: #00fff6;
+	padding: 0 10px;
+	cursor: pointer;
+	opacity: .8;
+}
+
+.logout:hover,
+.backModleChange:hover,
+.backHomePage:hover {
+	opacity: 1;
+}
+
+.ant-cascader-picker-show-search.ant-cascader-picker-focused {
+	color: rgba(1, 214, 194, .25);
+}
+
+.overflow-ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.changeBtn {
+	width: 118px;
+	height: 30px;
+	background-image: url('./img/btnBg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	font-size: 20px;
+	color: #fff;
+	position: absolute;
+	top: 36px;
+}
+
+.changeBtnActive {
+	height: 38px;
+	line-height: 38px;
+	top: 32px;
+	background-image: url('./img/btnActiveBg.png');
+}

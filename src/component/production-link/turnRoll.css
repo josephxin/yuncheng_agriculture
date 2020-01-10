@@ -1,0 +1,54 @@
+.rollList{
+  width: 397px;
+  height: 212px;
+  background: url('./img/bgs.png') no-repeat;
+}
+.rollList li{
+  width: 130px;
+  height: 90px;
+  position:absolute;
+  text-align: center
+}
+.rollList .center{
+  left:163px;
+  top:36px;
+  z-index: 1;
+  transform: scale(1);
+  transition: all 1s
+}
+.rollList .left{
+
+  left:15px;
+  top:10px;
+  opacity:0.5;
+  transform: scale(0.9);
+  transition: all 1s
+}
+.rollList .right{
+  left:316px;
+  top:10px;
+  opacity:0.5;
+  transform: scale(0.9);
+  transition: all 1s
+}
+.rollList .left-rear{
+  left:81px;
+  top:-49px;
+  opacity:0.5;
+  transform: scale(0.7);
+  transition: all 1s
+}
+.rollList .center-rear{
+  left:161px;
+  top:-61px;
+  opacity:0.5;
+  transform: scale(0.6);
+  transition: all 1s
+}
+.rollList .right-rear{
+  left:248px;
+  top:-49px;
+  opacity:0.5;
+  transform: scale(0.7);
+  transition: all 1s
+}

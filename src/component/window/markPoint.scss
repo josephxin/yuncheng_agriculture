@@ -1,0 +1,66 @@
+.mark-point{
+	z-index: 400;
+	position: absolute;
+	top: 70px;
+	left: 450px;
+	min-width: 184px;
+	background-color: rgba(23, 62, 116, .8);
+	border-radius: 5px;
+	padding: 12px;
+	>div{
+		height: 38px;
+		line-height: 38px;
+		font-size: 16px;
+		color: white;
+		>div{
+			float: left;
+			width: 27px;
+			height: 100%;
+			text-align: center;
+			img{
+			    vertical-align: middle;
+			    max-width: 100%;
+			}
+		}
+		>span{
+			float: left;
+			margin-left: 5px;
+		}
+	}
+}
+.mark-point2{
+    display: flex;
+    white-space: nowrap;
+    z-index: 400;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(23, 62, 116, .6);
+    border-radius: 5px;
+    padding: 12px;
+    >div{
+        flex: 1;
+        display: flex;
+        margin-right: 40px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 16px;
+        color: white;
+        >div{
+            width: 27px;
+            height: 100%;
+            text-align: center;
+            img{
+                vertical-align: middle;
+                max-width: 100%;
+            }
+        }
+        >span{
+            margin-left: 5px;
+        }
+        &:last-of-type{
+            margin-right: 0;
+        }
+    }
+}

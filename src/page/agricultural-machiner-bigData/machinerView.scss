@@ -1,0 +1,69 @@
+.timeSelect {
+    position: absolute;
+    display: block;
+    height: 45px;
+    background: rgba(18, 64, 119, 0.8);
+    color: #ffffff;
+    top: 90px;
+    left: 870px;
+    z-index: 999;
+    line-height: 45px;
+    box-sizing: border-box;
+    padding: 0 12px 0 12px;
+    border-radius: 5px;
+    ul {
+        display: inline-block;
+        li {
+            display: inline-block;
+            padding: 0 1px 0 10px;
+            color: #92aeda;
+            cursor: pointer;
+        }
+        .select-active {
+            color: #ff9600;
+            font-weight: bolder;
+        }
+    }
+    .picker-input {
+        width: 110px !important;
+    }
+}
+.centerBg{
+  background: url('./img/centerBg.png')no-repeat center center;
+  &>div{
+    ul li{
+      &>div{
+        &>span{
+          color:#ffffff;
+          font-size: 14px;
+          span{
+            font-size:36px;
+            font-weight: bolder;
+            color:#4abaff;
+          }
+        }
+        &>div{
+          cursor: pointer;
+          width: 140px;
+          height: 31px;
+          line-height: 31px;
+          border-radius: 15px;
+          //background:#393b3d;
+          background: -webkit-linear-gradient(rgba(8,62,127,0.5),rgba(5,81,172,0.5)); /* Safari 5.1 - 6.0 */
+          background: -o-linear-gradient(rgba(8,62,127,0.5),rgba(5,81,172,0.5)); /* Opera 11.1 - 12.0 */
+          background: -moz-linear-gradient(rgba(8,62,127,0.5),rgba(5,81,172,0.5)); /* Firefox 3.6 - 15 */
+          background: linear-gradient(rgba(8,62,127,0.5),rgba(5,81,172,0.5)); /* 标准的语法 */
+        }
+      }
+    }
+    div{
+      text-align: center;
+      font-size: 12px;
+      p{
+        font-size:16px;
+        font-weight:bold;
+        letter-spacing: 3px;
+      }
+    }
+  }
+}

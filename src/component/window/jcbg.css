@@ -1,0 +1,14 @@
+.jcbg {
+	height: 100%;
+	padding: 21px 53px 45px;
+}
+
+.bgColor {
+	background-color: rgba(7, 50, 93, .5);
+}
+
+.jcbg td {
+	border: #2e6ebc solid 1px;
+	padding: 28px;
+	text-align: center;
+}

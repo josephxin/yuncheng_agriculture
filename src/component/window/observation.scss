@@ -1,0 +1,59 @@
+.observation-cont{
+	z-index: 100;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	height: 850px;
+	padding: 0 10px 27px;
+}
+.observation-head{
+	display: flex;
+	height: 90px;
+	text-align: center;
+	>div{
+	    cursor: pointer;
+		flex: 1;
+		padding-top: 16px;
+		&.active{
+		    background-color: rgba(23, 62, 116, 0.8);
+		}
+	}
+}
+.observation-head3{
+    overflow: hidden;
+    text-align: left;
+    >div{
+        float: left;
+        width: 50%;
+        >b{
+            font-weight: normal;
+        }
+        >span{
+            color: #00d8ff;
+            font-size: 20px;
+        }
+        >em{
+            font-style: normal;
+        }
+    }
+}
+.head-green{
+	color: #00ff9c;
+}
+.head-blue{
+	color: #00d8ff;
+}
+.head-orange{
+	color: #ff9d55;
+}
+.head-gray{
+	color: #cccccc;
+	font-size: 14px;
+}
+.head-white{
+	color: #fff;
+	font-size: 14px;
+}
+.font-22{
+	font-size: 22px;
+}

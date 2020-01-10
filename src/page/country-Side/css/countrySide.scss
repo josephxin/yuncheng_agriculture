@@ -1,0 +1,651 @@
+.tabs-switch {
+    position: absolute;
+    top: 60px;
+    left: 505px;
+    color: white;
+    text-align: center;
+}
+
+.tabs-switch-item {
+    position: absolute;
+    top: 30px;
+    .my-btn {
+        display: block;
+        width: 118px;
+        height: 30px;
+        line-height: 30px;
+        background-image: url('../../../img/btnBg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        cursor: pointer;
+        font-size: 20px;
+        color: #fff;
+        &.active {
+            height: 38px;
+            line-height: 38px;
+            transform: translateY(-4px);
+            background-image: url('../../../img/btnActiveBg.png');
+        }
+    }
+}
+
+#countryBtn {
+    left: 210px;
+}
+
+#affluentBtn {
+    left: 340px;
+}
+
+#harmoniousBtn {
+    left: 470px;
+}
+
+#ecologyBtn {
+    left: 600px;
+}
+.harmonious-box{
+    text-align: left;
+}
+.people-content {
+    width: 440px;
+    height: 480px;
+    padding-left: 30px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column
+}
+
+.people-bg {
+    width: 400px;
+    height: 30px;
+    background: #004aaf;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 30px;
+    position: relative;
+}
+
+.user-big {
+    width: 38px;
+    height: 42px;
+    background: url("../img/user-big.png")no-repeat center;
+    margin: -10px 0 0 0;
+}
+
+.user-text {
+    line-height: 30px;
+    font-size: 14px;
+    color: #f5f6fa;
+    margin-left: 20px;
+}
+
+.user-company {
+    position: absolute;
+    right: 40px;
+}
+
+.color-text {
+    min-width: 155px;
+    font-size: 36px;
+    font-style: oblique;
+    font-weight: 500;
+    text-align: right;
+    color: #b1d8ed;
+    margin-top: -16px;
+    letter-spacing: -1px;
+    position: absolute;
+    right: 60px;
+}
+
+.households-content {
+    width: 870px;
+    height: 235px;
+    margin-top: 50px;
+    padding: 25px 25px 0 25px;
+    border: 1px solid #1c6bbf;
+    background: rgba(10, 57, 131, 0.5);
+    display: flex;
+    justify-content: center;
+}
+
+.house-ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.house-ul li {
+    width: 180px;
+    height: 70px;
+    margin: 0 45px 25px 45px;
+    border-bottom: 1px solid #00acff;
+    text-align: center;
+    color: #ffffff;
+    background: url("../img/border-bg.png")no-repeat center bottom;
+}
+
+.house-title {
+    font-size: 14px;
+}
+
+.user-small {
+    width: 23px;
+    height: 21px;
+    display: inline-block;
+    background: url("../img/user-small.png")no-repeat center;
+    vertical-align: -3px;
+}
+
+.house-num {
+    font-size: 20px;
+    font-weight: 800;
+    background-image: -webkit-linear-gradient(top, #f9fcfd, #c3dce7, #87b4cd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 10px;
+}
+
+.house-company {
+    font-size: 14px;
+}
+
+.selectBox {
+    width: 870px;
+    position: absolute;
+    top: 140px;
+    left: 520px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 20px;
+    vertical-align: -10px;
+    color: #08acc6;
+    height: 45px;
+    line-height: 45px;
+    background: -webkit-linear-gradient(top, rgba(8, 55, 127, .6) 0%, rgba(15, 75, 157, .6) 100%);
+    background: -o-linear-gradient(top, rgba(8, 55, 127, .6) 0%, rgba(15, 75, 157, .6) 100%);
+    background: -ms-linear-gradient(top, rgba(8, 55, 127, .6) 0%, rgba(15, 75, 157, .6) 100%);
+    background: linear-gradient(to bottom, rgba(8, 55, 127, .6) 0%, rgba(15, 75, 157, .6) 100%);
+}
+
+.selectSpan {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    color: #00ffe4;
+}
+
+.selectBox .show-here span {
+    font-weight: normal;
+}
+
+.selectBox .show-here {
+    top: 7px;
+}
+
+.country-side .titlePanel:first-child {
+    height: 30px;
+    line-height: 30px;
+}
+
+.pie-title {
+    color: #b1d8ed;
+    position: absolute;
+    top: 115px;
+    left: 62px;
+    font-size: 14px;
+}
+
+.pie-text1 {
+    width: 200px;
+    position: absolute;
+    top: 502px;
+    left: 49px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #f5e4ff;
+    text-align: center;
+}
+
+.pie-text2 {
+    width: 200px;
+    position: absolute;
+    left: 50px;
+    top: 502px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #f5e4ff;
+    text-align: center;
+}
+
+.left-text1,
+.center-text1,
+.right-text1 {
+    background: url("../img/line.png") no-repeat bottom;
+}
+
+.left-text1,
+.left-text2,
+.center-text1,
+.center-text2,
+.right-text1,
+.right-text2 {
+    font-size: 14px;
+}
+
+.left-text2 span,
+.right-text2 span {
+    font-weight: 700;
+    color: #28E2FF;
+}
+
+.center-text2 span {
+    font-size: 30px;
+    font-weight: 700;
+    color: #FEFE57;
+}
+
+.textCenter {
+    width: 180px;
+    position: absolute;
+    top: 450px;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 32px;
+}
+
+.textCenter1 {
+    left: 130px;
+}
+
+.textCenter2 {
+    left: 0;
+}
+
+.textCenter3 {
+    right: 70px;
+}
+
+
+/*富裕农村*/
+
+.affluent {
+    position: absolute;
+    left: -846px;
+    top: -83px;
+}
+
+.agriculture-box {
+    width: 440px;
+    height: 280px;
+}
+
+.yield-box {
+    width: 440px;
+    height: 280px;
+}
+
+.finance-box {
+    width: 440px;
+    height: 280px;
+}
+
+.life-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.life-one {
+    width: 510px;
+    height: 240px;
+}
+
+.life-two {
+    width: 330px;
+    height: 240px;
+}
+
+.life-three {
+    flex: 1;
+    height: 240px;
+}
+
+.life-four {
+    flex: 1;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.four-box {
+    width: 140px;
+    height: 140px;
+    background: url("../img/circle-bg.png") no-repeat;
+}
+
+.four-box p:first-child {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 35px;
+    min-width: 100px;
+    color: #98c4ff;
+    font-weight: bold;
+}
+
+.text-company {
+    font-size: 16px;
+    color: #fff;
+    padding-left: 5px;
+    font-weight: normal;
+}
+
+.four-box p:last-child {
+    font-size: 16px;
+    text-align: center;
+    color: #98c4ff;
+}
+
+.production-box {
+    margin-top: 40px;
+}
+
+.agricultural_production_data {
+    position: relative;
+    margin-top: 35px;
+}
+
+.total_output {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    >span {
+        font-size: 20px;
+        color: #fff66c;
+        >span {
+            font-size: 30px;
+        }
+    }
+    p{
+      font-size: 22px;
+      display: inline-block;
+    }
+}
+
+
+/*和谐农村*/
+
+.harmonious-box {
+    position: absolute;
+    left: -975px;
+    top: -90px;
+}
+
+.countrys-box,
+.statistics-box,
+.shopping-box {
+    width: 440px;
+    height: 280px;
+}
+
+.info-box {
+    margin-top: 35px;
+    height: 240px;
+}
+
+.centerMapBox {
+    position: absolute;
+    left: 500px;
+    top: 192px;
+    width: 890px;
+    height: 500px;
+    background-color: rgba(25, 95, 175, .1);
+    cursor: default;
+    .centerMap {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 695px;
+        height: 390px;
+    }
+    .centerMapbox-title {
+        position: absolute;
+        left: 30px;
+        line-height: 1;
+        color: #fff;
+        font-size: 16px;
+    }
+    .health-service {
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        width: 165px;
+        >div {
+            height: 80px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            font-size: 14px;
+            text-align: left;
+            background-color: rgba(25, 95, 175, .3);
+            cursor: pointer;
+            >p {
+                line-height: 1;
+                padding: 11px 0 9px;
+            }
+            >div {
+                >span {
+                    font-size: 30px;
+                }
+                >i {}
+            }
+        }
+    }
+    .educational-resources {
+        position: absolute;
+        bottom: 24px;
+        left: 30px;
+        height: 80px;
+        >div {
+            float: left;
+            margin-right: 60px;
+            width: 165px;
+            height: 80px;
+            padding-left: 75px;
+            font-size: 14px;
+            text-align: left;
+            background-repeat: no-repeat;
+            background-position: 28px;
+            background-color: rgba(25, 95, 175, .3);
+            cursor: pointer;
+            &:last-of-type {
+                margin-right: 0;
+            }
+            >div {
+                display: flex;
+                margin-top: 12px;
+                padding-right: 5px;
+                font-size: 16px;
+                color: #fff;
+                >span {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+            }
+            >p {
+                font-size: 14px;
+                color: #adcae0;
+                line-height: 1;
+            }
+        }
+    }
+}
+
+
+/*词云*/
+
+.bubbleWordCloud {
+    width: 440px;
+    height: 260px;
+}
+
+.img-box {
+    width: 800px;
+    height: 500px;
+    margin: 10px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box img {
+    display: block;
+    width: 800px;
+    height: 500px;
+}
+
+.text-div {
+    width: 1450px;
+    margin: 0 auto;
+}
+
+.img-text {
+    font-size: 20px;
+    text-indent: 40px;
+    text-align:justify;
+    text-justify:inter-ideograph;
+}
+
+.look-text {
+    color: #00f6de;
+    padding-left: 15px;
+}
+
+.contentBox>div:first-child {
+    overflow-y: auto;
+}
+
+.region-box {
+   width: 420px;
+   overflow: hidden;
+}
+
+.diaLogBox {
+    overflow-y: auto;
+    height: 720px!important;
+}
+
+
+/*生态农村*/
+
+.ecology-box {
+    position: absolute;
+    left: -1110px;
+    top: -83px;
+}
+
+.ecology-box>.listBoxs>a:nth-of-type(3) {
+    width: 55%;
+}
+
+.entertainment-box,
+.terrain-box,
+.sewage-box,
+.garbage-box {
+    width: 440px;
+    height: 280px;
+}
+
+.land-box {
+    margin-top: 40px;
+    cursor: default;
+    .land-sum-area {
+        float: left;
+        margin-top: 34px;
+        margin-left: 40px;
+        width: 156px;
+        height: 156px;
+        background-image: url(../img/bg_water.png);
+        color: white;
+        line-height: 1;
+        >h5 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: white;
+        }
+        >div {
+            font-size: 14px;
+        }
+        >p {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+    }
+    .land-area-percent {
+        float: left;
+        width: 300px;
+        height: 260px;
+        margin-left: 50px;
+    }
+    .land-water {
+        float: left;
+        width: 250px;
+        height: 260px;
+    }
+}
+
+.water-distribution {
+    width: 825px;
+    height: 505px;
+    position: absolute;
+    top: 185px;
+    left: 530px;
+    svg {
+        overflow: visible !important;
+    }
+    .title {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+        color: #fff;
+    }
+}
+
+.gisMap {
+    z-index: 10;
+    position: absolute;
+    top: 125px;
+    left: 30px;
+    width: 1870px;
+    height: 880px;
+}
+
+.query-box {
+    display: flex;
+    z-index: 10;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    line-height: 32px;
+    >span {
+        font-size: 14px;
+    }
+    .select-box{
+        margin-right: 50px;
+    }
+    .back{
+        margin-left: 200px;
+    }
+}
+.scenery-div{
+  padding: 30px 50px;
+  text-align: left;
+}

@@ -1,0 +1,210 @@
+.structure-wrap{
+  width: 358px;
+  height: 280px;
+  background: url('./img/datapicker.png') no-repeat;
+}
+.structure-list {
+  position: relative;
+  margin-left: 50px
+}
+.structure-list li{
+  width: 118px;
+  font-size: 16px;
+  color:#fff;
+  position: absolute;
+  left:200px;
+  top:26px
+}
+.structure-list li i{
+  color:#00ffff;
+  font-size: 12px
+}
+.structure-list li:nth-child(1){
+  left:-7px;
+  top:26px
+}
+.structure-list li:nth-child(2){
+  width:90px;
+  left:182px;
+  top:37px
+}
+.structure-list li:nth-child(3){
+  width:85px;
+  left:-41px;
+  top:95px
+}
+.structure-list li:nth-child(4){
+  width:85px;
+  left:219px;
+  top:118px
+}
+.structure-list li:nth-child(5){
+  width:85px;
+  left:-25px;
+  top:163px
+}
+/*.unified-wrap{*/
+  /*width: 386px;*/
+  /*height: 157px;*/
+  /*background: url('./img/bg.png') no-repeat;*/
+/*}*/
+
+.unified-wrap{
+    width: 312px;
+    height: 163px;
+    margin-left: 25px;
+    background: url('./img/bg1.png') no-repeat;
+}
+
+
+.unified-list{
+  position: relative;
+}
+.unified-list li{
+  width: 85px;
+  font-size: 16px;
+  color:#fff;
+  position: absolute;
+  left:20px;
+  top:20px
+}
+.unified-list li span i{
+  font-size: 20px;
+  background: linear-gradient(to bottom, #8fffff, #2ac8f7);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+.unified-list li:nth-child(1){
+  left:0 ;
+  top:-10px
+}
+.unified-list li:nth-child(2){
+  left:94px;
+  top:7px
+}
+.unified-list li:nth-child(3){
+  left:185px;
+  top:-15px
+}
+.unified-list li:nth-child(4){
+  left:282px;
+  top:7px
+}
+.unified-list li h4{
+  width: 139px;
+  position: absolute;
+  left:21px;
+  top:155px;
+  color: #fff;
+}
+.unified-list li div{
+  width: 100px;
+  position: absolute;
+  left:20px;
+  top:0
+}
+.unified-list li:nth-child(1) div{
+  left:14px;
+  top:-34px
+}
+.unified-list li:nth-child(2) div{
+  left:14px;
+  top:-34px
+}
+.unified-list li:nth-child(3) div{
+  left:14px;
+  top:-34px
+}
+
+.unified-list li:nth-child(4) div{
+  left:14px;
+  top:-34px
+}
+.unified-list li:nth-child(1) h4{
+  left: 5px;
+    top: 160px;
+}
+.unified-list li:nth-child(2) h4{
+    left: 30px;
+    top: 160px;
+}
+.unified-list li:nth-child(3) h4{
+    top: 165px;
+    margin-left: 10px;
+}
+.unified-list li:nth-child(2) .nameSpan{
+    margin-left: 10px;
+}
+.unified-list li:nth-child(3) .nameSpan{
+    margin-left: 20px;
+}
+.unified-list li:nth-child(4) h4{
+  left:16px;
+}
+.unified-list li .picture{
+  width: 48px;
+  height: 48px;
+  display: block;
+  position: absolute;
+ 
+}
+.unified-list li:nth-child(1) .picture{
+  background: url('./img/icon1.png') no-repeat;
+  left:30px;
+  top:34px;
+  
+}
+.unified-list li:nth-child(2) .picture{
+  background: url('./img/icon2.png') no-repeat;
+  left:38px;
+  top:40px;
+}
+
+
+
+.unified-list li:nth-child(3) .picture{
+  background: url('./img/icon3.png') no-repeat;
+  left:48px;
+  top:55px;
+  
+}
+.unified-list li:nth-child(4) .picture{
+  background: url('./img/icon4.png') no-repeat;
+  left:25px;
+  top:48px;
+  
+}
+.doms{
+  position: relative
+}
+.doms div{
+  width: 46px;
+  height: 46px;
+  background: url('./img/circle.png');
+  position: absolute
+}
+.doms div:nth-child(1){
+  left:-6px;
+  top:42px;
+}
+.doms div:nth-child(2){
+  left:318px;
+  top:58px;
+
+}
+.doms div:nth-child(3){
+  left:-41px;
+  top:109px;
+}
+.doms div:nth-child(4){
+  left:353px;
+  top:135px;
+}
+.doms div:nth-child(5){
+  left:-23px;
+  top:176px;
+}
+
+

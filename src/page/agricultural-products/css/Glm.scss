@@ -1,0 +1,68 @@
+.investment{
+	display: flex;
+	height: 100%;
+	padding: 21px 53px 45px;
+	font-size: 16px;
+	.investment-left{
+		width: 628px;
+		margin-right: 40px;
+	}
+	.investment-left-top{
+		overflow: auto;
+		height: 200px;
+		display: flex;
+		padding: 15px 30px;
+		background-color: #001f53;
+		p{
+			line-height: 35px;
+			font-size: 16px;
+			span{
+				padding-left: 20px;
+				color: #2cfeef;
+			}
+		}
+	}
+	.shop-info {
+		flex: auto;
+	}
+	img {
+		width: 200px;
+    	margin-left: 15px;
+		cursor: pointer;
+	}
+	.investment-left-bottom{
+		position: relative;
+		height: 468px;
+		margin-top: 30px;
+	}
+	.investment-right{
+		position: relative;
+		flex: 1;
+	}
+
+	.investment-right-head{
+		display: flex;
+		height: 105px;
+		text-align: center;
+		>div{
+			flex: 1;
+			padding-top: 31px;
+		}
+	}
+	.head-green{
+		color: #00ff9c;
+	}
+	.head-blue{
+		color: #00d8ff;
+	}
+	.head-orange{
+		color: #ff9d55;
+	}
+	.head-gray{
+		color: #cccccc;
+		font-size: 14px;
+	}
+	.font-22{
+		font-size: 22px;
+	}
+}

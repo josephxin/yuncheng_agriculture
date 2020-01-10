@@ -1,0 +1,57 @@
+/* 折线图提示框 */
+.tooltip-box {
+  position: relative;
+  padding: 5px 20px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #12ffff;
+  border-left: 0;
+  display: inline-block;
+}
+
+.tooltip-box .lt,
+.tooltip-box .rb {
+  position: absolute;
+  left: 0;
+  right: 50%;
+  border: 1px solid #12ffff;
+}
+
+.tooltip-box .lt {
+  border-top-left-radius: 5px;
+  top: -1px;
+  bottom: 70%;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.tooltip-box .rb {
+  border-bottom-left-radius: 5px;
+  bottom: -1px;
+  top: 70%;
+  border-top: 0;
+  border-right: 0;
+}
+
+.tooltip-box .lt::after,
+.tooltip-box .rb::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 8px;
+  background-color: #12ffff;
+  position: absolute;
+  left: -7px;
+}
+
+.tooltip-box .lt::after {
+  bottom: -3px;
+  transform: rotateZ(-45deg);
+}
+
+.tooltip-box .rb::after {
+  top: -3px;
+  transform: rotateZ(45deg);
+}

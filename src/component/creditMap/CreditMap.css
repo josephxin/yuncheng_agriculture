@@ -1,0 +1,45 @@
+.mapBox {
+  width: 860px;
+  height: 850px;
+  background: url("/static/image/mapBg.png") no-repeat 50% 650px;
+}
+
+.createBox {
+  position: absolute;
+  top: 700px;
+  left: 100px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.createBox .bar {
+  width: 10px;
+  height: 110px;
+  background: linear-gradient(top, #09f5fa, #0195f5);
+  position:relative;
+  top:10px;
+}
+.createBox .bar::before{
+  content:'';
+  display:block;
+  width:0;
+  height:0;
+  border-width:7px 7px 7px 0;
+  border-style:solid;
+  border-color:transparent #09f5fa transparent transparent;/*透明 灰 透明 透明 */
+  position:absolute;
+  top:0;
+  left:20px;
+}
+.createBox .bar::after{
+  content:'';
+  display:inline-block;
+  width:0;
+  height:0;
+  border-width:7px 7px 7px 0;
+  border-style:solid;
+  border-color:transparent #02cffe transparent transparent;/*透明 灰 透明 透明 */
+  position:absolute;
+  top:95px;
+  left:20px;
+}

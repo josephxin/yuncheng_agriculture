@@ -1,0 +1,70 @@
+.streetContent {
+    position: absolute;
+    width: 700px;
+    height: 787px;
+    background-image: url("../img/insurance.png");
+    background-size: 100% 100%;
+}
+
+.streetContent div {
+    position: absolute;
+}
+
+.streetContent span, .streetContent p {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.streetContent .textSpan {
+    color: #00fcff;
+}
+
+.streetContent .contentBox1 {
+    height: 50px;
+    line-height: 25px;
+    top: 150px;
+    left: 318px
+}
+
+.streetContent .contentBox2 {
+    height: 50px;
+    line-height: 25px;
+    top: 165px;
+    left: 470px
+}
+
+.streetContent .contentBox3 {
+    height: 50px;
+    line-height: 25px;
+    top: 250px;
+    left: 276px
+}
+
+.streetContent .contentBox4 {
+    height: 50px;
+    line-height: 25px;
+    top: 244px;
+    left: 503px
+}
+
+.streetContent .contentBox5 {
+    height: 50px;
+    line-height: 25px;
+    top: 340px;
+    left: 260px
+}
+
+.streetContent .contentBox6 {
+    height: 50px;
+    line-height: 25px;
+    top: 340px;
+    left: 370px
+}
+
+.streetContent .contentBox7 {
+    height: 50px;
+    line-height: 25px;
+    top: 353px;
+    left: 505px
+}
+

@@ -1,0 +1,76 @@
+.list-trace{
+  display: flex;
+
+}
+.list-trace li{
+  width:207px;
+  height: 68px;
+  background: url('./img/bg-left.png') no-repeat;
+  display:flex;
+  box-sizing: border-box;
+  padding: 10px
+}
+.list-trace li:nth-child(2){
+  background: url('./img/bg-right.png') no-repeat;
+  margin-left: 3px
+}
+.list-trace li:nth-child(1) .picture{
+  width: 42px;
+  height: 40px;
+  display: block;
+  background: url('./img/icon-left.png') no-repeat;
+  background-size: 100% 100%;
+}
+.list-trace li:nth-child(2) .picture{
+  width: 42px;
+  height: 40px;
+  display: block;
+  background: url('./img/icon-right.png') no-repeat;
+  background-size: 100% 100%;
+}
+.list-trace li div{
+  width:125px;
+  font-size: 14px;
+  color: wheat;
+  margin-left: 23px
+  
+}
+.list-trace li:nth-child(1) div i{
+ font-size: 20px;
+ background: linear-gradient(to bottom, #96ffff, #00d1f7);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+  
+}
+.list-trace li:nth-child(2) div i{
+  font-size: 20px;
+  background: linear-gradient(to right, #2accb8, #75f18e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   
+ }
+ 
+
+
+.unit-wrap{
+  position: absolute;
+  left:20px;
+  top:87px;
+  font-size: 16px;
+  font-weight: bold;
+ 
+}
+.unit-wrap span{
+  width:80px
+}
+.unit-wrap span:nth-child(1){
+  position: absolute;
+  left:105px;
+  color:#fd296f
+}
+.unit-wrap span:nth-child(2){
+  position: absolute;
+  left:326px;
+  color:#01ae85
+}
+

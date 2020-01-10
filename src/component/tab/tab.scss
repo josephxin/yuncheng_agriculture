@@ -1,0 +1,78 @@
+.diy-tab-wrap{
+    display: inline-block;
+    .diy-tab-item{
+        display: inline-block;
+        min-width:80px;
+        color: #fff;
+        font-size: 14px;
+        height: 30px;
+        line-height: 30px;
+        box-sizing: border-box;
+        text-align: center;
+        position: relative;
+        margin-right: 20px;
+        cursor: pointer;
+        border: 1px solid #226fb6;
+        background: linear-gradient(180deg, #0f2b67, #0754a3);
+        &:last-child {
+            margin-right:0;
+        }
+        i::after,i::before {
+            content: "";
+            height: 8px;
+            width:8px;
+            display: block;
+            border: 1px solid #00e3fb;
+            position: absolute;
+        }
+        i{
+            &.diy-tab-l::after {
+                top: -1px;
+                left: -1px;
+                border-right: 0;
+                border-bottom: 0;
+            }
+            &.diy-tab-l::before {
+                bottom: -1px;
+                left: -1px;
+                border-right: 0;
+                border-top: 0;
+            }
+            &.diy-tab-r::after {
+                top: -1px;
+                right: -1px;
+                border-left: 0;
+                border-bottom: 0;
+            }
+            &.diy-tab-r::before {
+                bottom: -1px;
+                right: -1px;
+                border-left: 0;
+                border-top: 0;
+            }
+        }
+        &:hover,&.active{
+            background: linear-gradient(180deg, #0196ce, #00c6be);
+            .diy-tab-l::after {
+                top: -4px;
+                left: -4px;
+            }
+            .diy-tab-l::before {
+                bottom: -4px;
+                left: -4px;
+            }
+            .diy-tab-r::after {
+                top: -4px;
+                right: -4px;
+            }
+            .diy-tab-r::before {
+                bottom: -4px;
+                right: -4px;
+            }
+        }
+    }
+}
+
+.tabScroll .diy-tab-item {
+    margin-bottom: 20px;
+}

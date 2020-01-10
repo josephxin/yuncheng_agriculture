@@ -1,0 +1,54 @@
+{
+  "name": "weifang-agriculture-201812",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@jusfoun-vis/canvas-common": "^0.1.1",
+    "@jusfoun-vis/common": "0.1.1",
+    "@jusfoun-vis/relativism": "0.1.3",
+    "@jusfoun-vis/scaler": "0.1.5",
+    "@jusfoun-vis/threejs-chart": "^0.1.10",
+    "@jusfoun-vis/threejs-common": "^0.1.8",
+    "@tweenjs/tween.js": "17.2.0",
+    "animate.css": "^3.7.0",
+    "antd": "^3.16.5",
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "d3": "^5.7.0",
+    "dat.gui": "^0.7.3",
+    "echarts": "^4.2.0-rc.2",
+    "echarts-liquidfill": "^2.0.5",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-router-dom": "4.3.1",
+    "react-script-vis": "1.0.8",
+    "react-scripts": "^2.1.2",
+    "react-transition-group": "^2.5.2",
+    "three": "^0.92.0",
+    "three-obj-mtl-loader": "^1.0.3",
+    "three-orbitcontrols": "^2.99.1",
+    "uuid": "3.3.2",
+    "yarn": "^1.12.3",
+    "zent": "^6.5.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "relate": "node ./src/relate.js"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "babel-loader": "8.0.5",
+    "eslint": "5.12.0",
+    "node-sass": "^4.11.0",
+    "url-search-params-polyfill": "^7.0.0",
+    "webpack": "4.28.3"
+  }
+}

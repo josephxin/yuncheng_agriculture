@@ -1,0 +1,156 @@
+* {
+	box-sizing: border-box;
+}
+
+.icon li {
+	width: 42px;
+	height: 42px;
+	margin-top: 25px;
+	text-align: center;
+	color: #fff;
+}
+
+.icon img {
+	width: 38px;
+	height: 38px;
+}
+
+.icon .active {
+	border: 2px solid #ccc;
+}
+
+.newListBox{
+    border-bottom: 1px solid #019098;
+}
+
+.cirTable .listCon1 {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #019098;
+}
+.cirTable .listCon1 li{
+    height: 53px;
+    line-height: 53px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgba(2,73,92,.8);
+    border-top: 2px solid #019098;
+    border-bottom: 2px solid #019098;
+}
+
+.cirTable .listCon1 li:nth-child(1){
+    width: 155px;
+    padding-left: 10px;
+}
+.cirTable .listCon1 li:nth-child(2){
+    width: 100px;
+}
+.cirTable .listCon1 li:nth-child(3){
+    width: 100px;
+}
+.cirTable .listCon1 li:nth-child(4){
+    width: 100px;
+}
+.cirTable .noList{
+    text-align: center;
+    color: #ccc;
+}
+.cirTable .tracListBox ul:last-child .noList{
+    display: none;
+}
+.cirTable .list1 li{
+    height: 35px!important;
+    line-height: 35px!important;
+}
+.cirTable .list1 li a{
+    color: #ccc;
+}
+.cirTable .list1 li a:nth-child(1){
+    width: 140px;
+    color: rgb(74, 197, 255);
+}
+.cirTable .list1 li a:nth-child(2){
+    width: 80px;
+}
+.cirTable .list1 li a:nth-child(3){
+    width: 100px;
+}
+.cirTable .list1 li a:nth-child(4){
+    width: 100px;
+    text-align: right;
+}
+
+.cirTable .list1 li{
+    height: 42px;
+    line-height: 42px;
+}
+
+
+
+
+/*example 动画*/
+.realTimeTable{
+	/*transition: 2s;*/
+}
+.example-enter {
+	transform: translateY(100px);
+	opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+	transform: translateY(0);
+	opacity: 1;
+	transition: opacity 2000ms ease-in;
+}
+
+.example-leave {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.example-leave.example-leave-active {
+	transform: translateY(-100px);
+	opacity: 0.01;
+	transition: opacity 2000ms ease-in;
+}
+
+.example-appear {
+	opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+	opacity: 1;
+	transition: opacity 2000s ease-in;
+}
+
+/*//水平方向*/
+.echarts-container {
+    position: relative;
+    display: flex;
+    margin-top: 66px;
+    height: 510px;
+    >div {
+        position: relative;
+        flex: 1;
+        width: 0;
+        &+div {
+            margin-left: 200px;
+        }
+    }
+}
+/*//垂直方向*/
+.echarts-container-column {
+    position: relative;
+    display: flex;
+    margin-top: 26px;
+    height: 600px;
+    flex-direction: column;
+    >div {
+        position: relative;
+        flex: 1;
+        height: 0;
+        &+div {
+            margin-top: 20px;
+        }
+    }
+}

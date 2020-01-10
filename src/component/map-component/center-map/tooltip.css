@@ -1,0 +1,91 @@
+.toolTipClass .green-txt {
+	font-weight: bold;
+	background: linear-gradient(to bottom, #75f18e, #30cfb5);
+	-webkit-background-clip: text;
+	color: transparent;
+	font-size: 24px;
+}
+
+.toolTipClass .yellow-txt {
+	font-weight: bold;
+	background: linear-gradient(to bottom, #feffb1, #fff606);
+	-webkit-background-clip: text;
+	color: transparent;
+	font-size: 24px;
+}
+
+.circulation-tooltip-class .line-msg {
+	width: 250px;
+	height: 24px;
+	line-height: 24px;
+	position: absolute;
+	right: 6px;
+	font-size: 16px;
+	color: #fff;
+}
+
+.circulation-tooltip-class .msg-name {
+	display: inline-block;
+	margin-right: 4px;
+}
+
+.circulation-tooltip-class .msg-value {
+	font-weight: 600;
+}
+
+.grow-tooltip-class .line-message {
+	width: 192px;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	right: 3px;
+	font-size: 16px;
+	color: #fff;
+}
+
+.grow-tooltip-class .message-name {
+	display: inline-block;
+	margin-right: 4px;
+}
+
+.grow-tooltip-class .message-value {
+	display: inline-block;
+	margin-right: 2px;
+	font-weight: bold;
+	background: linear-gradient(to bottom, #75f18e, #30cfb5);
+	-webkit-background-clip: text;
+	color: transparent;
+	font-size: 22px;
+}
+
+.credit-tooltip-class .line-message {
+	width: 192px;
+	height: 34px;
+	line-height: 34px;
+	position: absolute;
+	right: 3px;
+	font-size: 16px;
+	color: #fff;
+}
+
+.credit-tooltip-class .message-name {
+	display: inline-block;
+	margin-right: 4px;
+}
+
+.credit-tooltip-class .message-value {
+	display: inline-block;
+	margin-right: 2px;
+	font-weight: bold;
+	background: linear-gradient(to bottom, #75f18e, #30cfb5);
+	-webkit-background-clip: text;
+	color: transparent;
+	font-size: 24px;
+}
+
+.mapToolTip-item {
+	line-height: 28px;
+	font-size: 18px;
+	font-weight: 500;
+	white-space: nowrap;
+}

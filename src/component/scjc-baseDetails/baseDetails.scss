@@ -1,0 +1,363 @@
+.topBase{
+    width: 350px;
+    z-index: 20;
+    position: absolute;
+    left: 540px;
+    top: 70px;
+    .greenhouseFather{
+        .greenhouseHead{
+            height: 42px;
+            text-align: center;
+            background-color: #00459b;
+            font-size: 16px;
+            div:first-child{
+                //float: left;
+                color: #00fff6;
+                line-height: 42px;
+                //margin-left: 200px;
+                cursor: pointer;
+            }
+            .titleName{
+                color:#fff;
+                //margin-left:200px;
+                line-height: 42px;
+            }
+        }
+        .baseBody{
+            font-size: 16px;
+            background-color: #002a68;
+            padding: 21px 30px 30px 30px;
+            .fl,.fr{
+                div{
+                    margin:10px 0;
+                }
+                div:last-child{
+                    margin-bottom: 0;
+                }
+            }
+            .littleTittle{
+                font-weight: 700;
+                color: #fff;
+            }
+            .leftName{
+                color:#ccc;
+            }
+            .rightText{
+                color:#fffefe;
+            }
+            .fl{
+                float: left;
+                width: 100%;
+            }
+            .fr{
+                float: right;
+                width: 50%;
+            }
+        }
+        .greenhouseFotter{
+            height: 45px;
+            background-color: #002a68;
+            color:#00fff6;
+            font-size: 16px;
+            text-align: center;
+            line-height: 45px;
+            border-top: 1px solid #00fff6;
+            cursor: pointer;
+        }
+    }
+    .detailExplain{
+        width: 208px;
+        height: 200px;
+        border: 1px solid #00f2ff;
+        border-radius: 5px;
+        padding-top: 20px;
+        padding-left: 20px;
+        position: absolute;
+        top:250px;
+        background-color: #0a1649;
+        display: none;
+        z-index: 30;
+        p{
+            color:#a5a8b3;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .cycleTitle{
+            font-size: 16px;
+            color:#fff;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+    }
+    .left1{
+        left:360px;
+    }
+    .left2{
+        left:620px;  
+    }
+    .left3{
+        left:880px;
+    }
+    .left4{
+        left:1140px;
+    }
+    .left5{
+        left:1320px;
+    }
+}
+table.greenhouseDetails{
+    background-image:linear-gradient(135deg,#001d54,#102e60, #001d54, #102e60);
+    .tdCss{
+        text-indent:2em;
+        font-size: 15px;
+    }
+    .tdText{
+        color: #00fff6;
+        font-size: 15px;
+    }
+    tr,td {
+        vertical-align: middle!important;
+    }
+}
+table.greenhouseDetails td:first-child{
+    padding-left: 0px;
+}
+
+
+.rightTopDiv{
+    float:left;
+    margin-left:100px;
+    margin-top:40px;
+    position: relative;
+    width:500px;
+    height:211px;
+    padding: 0 20px;
+    >div>div{
+        width: 140px;
+        height: 66px;
+        border: 1px solid #fff;
+        padding-top: 10px;
+        margin-right: 28px;
+        margin-bottom: 18px;
+        font-size: 14px;
+        text-align: center;
+        display: inline-block;
+        p:first-child{
+            color:#fff;
+        }
+    }
+    .normal{
+        background:linear-gradient(#008360, #012933);
+        border:1px solid #00b1ac;
+        p:last-child{
+            color:#00ff7c;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+    }
+    .high{
+        background:linear-gradient(#763a1a, #1c1f32);
+        border:1px solid #c77000;
+        p:last-child{
+            color:#ffc700;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+    .low{
+        background:linear-gradient(#004293, #011d4b);
+        border:1px solid #00a0ff;
+        p:last-child{
+            color:#00e4ff;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+    .normalText,.highText,.lowText{
+        height: 18px;
+        width: auto;
+        border:none;
+        margin: 0;
+        display: block;
+        padding: 0;
+        margin-bottom: 15px;
+    } 
+    .more{
+        height:auto;
+        width:auto;
+        border: none;
+        font-size: 16px;
+        color:#01d26b;
+    }
+    .more:hover{
+        text-decoration:underline;
+        cursor: pointer;
+    }
+    .circle{
+        width: 12px;
+        height: 12px;
+        border-radius: 6px;
+        display: inline-block;
+    }   
+    .highCircle{
+        background-color:#ff7200; 
+    }
+    .normalCircle{
+        background-color:#01d26b; 
+    }
+    .lowCircle{
+        background-color:#00a0ff; 
+    }
+}
+.normalText{
+    color:#01d26b;
+}
+.highText{
+    color:#ff6c00
+}
+.lowText{
+    color:#00a0ff
+}
+.cycleDiv{
+    //margin-top: 53px;
+    height: 203px;
+    width: 1190px;
+    position: absolute;
+    top:293px;
+    left:50%;
+    margin-left: -595px;
+    border-top: 1px dashed #02497b;
+    border-bottom: 1px solid #007fbc;
+    >.line{
+        height: 50px;
+        border-bottom: 1px dashed #02497b;
+    }
+    >.lineSpecial{
+        border-bottom: none;
+    }
+    .cycleTime{
+        color:#03fff6;
+        font-size: 15px;
+        width: 1250px;
+        margin-left: -25px;
+        p{
+            display: inline-block;
+            margin-right: 185px;
+        }
+        p:nth-child(5){
+            margin-right: 150px;
+        }
+        p:last-child{
+            float: right;
+            margin-right: 0;
+            // margin-left: -5px;
+        }
+    }
+    .imgDiv{
+        width: 20%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        text-align: center;
+        line-height: 201px;
+        z-index: 10;
+        div{
+            width:100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;   
+            background-position: center center;
+            background-repeat: no-repeat;   
+        }
+        span{
+            font-size: 15px;
+            color:#949a9f;
+            height: 15px;
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            margin-left: -20px;
+        }
+        .specialText1{
+            margin-left: -35px;
+        }
+    }
+}
+
+.footer{
+    width: 1380px;
+    position: absolute;
+    left:50%;
+    bottom: 50px;
+    margin-left: -690px;
+    .footerTitle{
+        font-size: 18px;
+        color:#fff;
+        text-align: center;
+    }
+    .footerDiv{
+        height: 85px;
+        padding-bottom: 37px;
+        padding-top: 25px;
+        margin-top: 15px;
+        text-align: center;
+        .separate span{
+            position: relative;
+            bottom: 10px;
+            right:10px;
+        }
+        div{
+            display: inline-block;
+            font-size: 18px;
+            padding: 5px 28px 5px 25px;
+        }
+        .footerSign{
+            position: absolute;
+            right: -20px;
+            bottom: -10px;
+            .circle{
+                width: 12px;
+                height: 12px;
+                border-radius: 6px;
+                display: inline-block;
+                padding: 0;
+            }   
+            .highCircle{
+                background-color:#ff7200; 
+            }
+            .normalCircle{
+                background-color:#01d26b; 
+            }
+            .lowCircle{
+                background-color:#00a0ff; 
+            }
+            .normalText,.highText,.lowText{
+                height: 18px;
+                width: auto;
+                border:none;
+                margin: 0;
+                display: block;
+                padding: 0;
+                margin-bottom: 15px;
+            }
+            .normalText{
+                color:#01d26b;
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+            .highText{
+                color:#ff6c00;
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+            .lowText{
+                color:#00a0ff;
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+
+        }
+    }
+}

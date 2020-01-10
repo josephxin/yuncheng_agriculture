@@ -1,0 +1,80 @@
+.changeLegend {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 120px;
+  position: absolute;
+  top: 590px;
+  left: 10px;
+}
+
+.changeLegend {
+  top: 400px;
+}
+
+.changeLegend li {
+  flex: 1;
+  font-size: 14px;
+  color: #fff;
+  margin-top: 10px;
+  padding-left: 35px;
+  position: relative;
+}
+
+.grade0::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  background: green;
+  position: absolute;
+  left: 2px;
+  top: 4px;
+}
+
+.grade1::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  background: #ce352c;
+  position: absolute;
+  left: 2px;
+  top: 4px;
+
+}
+
+.grade2::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  background: #ee9716;
+  position: absolute;
+  left: 2px;
+  top: 4px;
+
+}
+
+.grade3::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  background: #f9f821;
+  position: absolute;
+  left: 2px;
+  top: 4px;
+
+}
+
+.grade4::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  background: #2d5cea;
+  position: absolute;
+  left: 2px;
+  top: 4px;
+}

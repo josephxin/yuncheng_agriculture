@@ -1,0 +1,67 @@
+.listBox{
+    width: 480px;
+    margin: 20px auto;
+    position: relative;
+    height: 160px;
+    overflow: hidden;
+}
+
+.listBox li {
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+	margin-bottom: 4px;
+}
+
+.listBox li a {
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	font-size: 18px;
+	height: 28px;
+	text-align: center;
+	box-sizing: border-box;
+	overflow: hidden;
+	/*内容超出后隐藏*/
+	text-overflow: ellipsis;
+	/* 超出内容显示为省略号*/
+	white-space: nowrap;
+	/*文本不进行换行*/
+	padding: 0 2px;
+}
+
+.listBox a:nth-of-type(1) {
+	width: 15%;
+}
+
+.listBox a:nth-of-type(2) {
+	width: 15%;
+}
+
+.listBox a:nth-of-type(3) {
+	width: 50%;
+}
+
+.listBox a:nth-of-type(4) {
+	padding: 0;
+	width: 74px;
+}
+
+.listOne li:hover a {
+	color: #e5db37;
+}
+
+.listBox a:nth-of-type(4) span {
+	background: #f00;
+	display: inline-block;
+	height: 100%;
+	background: url('./staticXing.png') 0  6px no-repeat;
+}
+
+.listBox li:hover a:nth-of-type(4) span {
+	background: #f00;
+	display: inline-block;
+	height: 100%;
+	background: url('./xing.png') 0  6px no-repeat;
+}
+

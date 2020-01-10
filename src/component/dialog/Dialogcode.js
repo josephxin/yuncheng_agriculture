@@ -1,0 +1,74 @@
+import React from 'react';
+import './Dialogcode.css';
+
+class Dialog extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      display: 'none',
+      activeIndex: 0
+    };
+  }
+
+  _open(text) {
+    this.setState({
+      display: 'block',
+      title: text
+    });
+  }
+
+  _close() {
+    if (typeof this.props.close == 'function') {
+      this.props.close();
+    }
+    this.setState({
+      display: 'none',
+    });
+  }
+  render() {
+    let me = this;
+    return (
+      <div style={{
+        position: 'absolute',
+        width: 400,
+        height: 500,
+        zIndex: 999,
+        background: 'rgba(0,0,0,.9)',
+        left: this.props.left||1300,
+        top: this.props.top||300,
+        display: me.state.display
+      }} ref="bgBox">
+        <div style={{
+          position: 'absolute',
+          left: '50%',
+          top: '50%',
+          width: me.props.width || 400,
+          height: me.props.height || 500,
+          transform: 'translate(-50%,-50%)',
+          paddingTop: '54px'
+        }} className="contentbox" ref='dialog'>
+          <h3 ref="h3">{this.props.title || '请添加标签'}</h3>
+          <span className="diaLogclose" onClick={() => {
+            me._close();
+          }}>x</span>
+          <div style={{ position: 'relative', top: '45px', height: '745px', color: '#fff' }}>
+            {me.props.children}
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  componentDidMount() {
+
+  }
+
+  componentDidUpdate() {
+    const me = this;
+    if(me.state.title){
+    	me.refs.h3.innerHTML = me.state.title
+    }
+  }
+}
+
+export default Dialog;

@@ -1,0 +1,24 @@
+.iconList {
+    z-index: 400;
+    position: absolute;
+    top: 133px;
+    left: 1790px;
+    >div {
+        width: 36px;
+        height: 36px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 20px;
+        cursor: pointer;
+        >div {
+            height: 36px;
+            background-color: rgba(41, 137, 251, 0);
+        }
+        &:hover,
+        &.active {
+            >div {
+                background-color: rgba(41, 137, 251, .5);
+            }
+        }
+    }
+}
