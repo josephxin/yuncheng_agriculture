@@ -36,12 +36,12 @@ self.__precacheManifest = [
     "url": "/static/media/tooltip-bg.efd0afab.png"
   },
   {
-    "revision": "15711cb89479584e103c0da8a2af1c6a",
-    "url": "/static/media/xing.15711cb8.png"
-  },
-  {
     "revision": "52eafc4d0dd6b48cfe5ce95f7a356452",
     "url": "/static/media/staticXing.52eafc4d.png"
+  },
+  {
+    "revision": "15711cb89479584e103c0da8a2af1c6a",
+    "url": "/static/media/xing.15711cb8.png"
   },
   {
     "revision": "9e2e7fdc69018667f993384ad64c9ba2",
@@ -152,28 +152,28 @@ self.__precacheManifest = [
     "url": "/static/media/bgs.2a3005c3.png"
   },
   {
-    "revision": "d9a8ad5b5401ad677b9ee6f66895462c",
-    "url": "/static/media/nowPlatform.d9a8ad5b.png"
-  },
-  {
     "revision": "5374127b2fe64d6ae7aaef9c205986e3",
     "url": "/static/media/platform.5374127b.png"
   },
   {
-    "revision": "a721e8469219b38e0fa625f8b00f7b1e",
-    "url": "/static/media/bloom.a721e846.png"
+    "revision": "d9a8ad5b5401ad677b9ee6f66895462c",
+    "url": "/static/media/nowPlatform.d9a8ad5b.png"
   },
   {
     "revision": "4cd6382b718923c524386a064d0e773d",
     "url": "/static/media/nowBloom.4cd6382b.png"
   },
   {
-    "revision": "841c6cb8b33f42cdcf59df9913b03808",
-    "url": "/static/media/result.841c6cb8.png"
+    "revision": "a721e8469219b38e0fa625f8b00f7b1e",
+    "url": "/static/media/bloom.a721e846.png"
   },
   {
     "revision": "ae7c5439221d5d5cd384863573c46d29",
     "url": "/static/media/nowResult.ae7c5439.png"
+  },
+  {
+    "revision": "841c6cb8b33f42cdcf59df9913b03808",
+    "url": "/static/media/result.841c6cb8.png"
   },
   {
     "revision": "6d66836ecc65e466b01922942fae814b",
