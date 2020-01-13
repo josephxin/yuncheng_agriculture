@@ -1,6 +1,5 @@
 import React from 'react';
 import Panel from '../../component/panel/Panel';
-import CreditMap from '../../component/creditMap/CreditMap';
 import QuantitativeTrend from '../../component/quantitative-trend/quantitativeTrend';
 import QuantitativeTrendTime from '../../component/quantitative-trend/quantitativeTrendTime';
 import Pie from '../../component/echarts/Pie4';

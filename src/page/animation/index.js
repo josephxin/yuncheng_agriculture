@@ -44,7 +44,7 @@ class IndexPage extends React.Component {
 				{/*在给video标签设置了autoplay属性的情况下，刷新页面后，视频无法自动播放
 					解决方法：给video标签添加muted属性，可写为muted或完整写法：muted="muted"*/}	
 				<video className={'my-video'} autoPlay="autoplay" muted="muted" >
-					<source src="/static/video/open.mp4" type="video/mp4" />
+					<source src="static/video/open.mp4" type="video/mp4" />
 			    您的浏览器不支持 video 标签。
 				</video>
 				<div className={'my-tool'}>

@@ -1,7 +1,7 @@
 .mapBox {
   width: 860px;
   height: 850px;
-  background: url("/static/image/mapBg.png") no-repeat 50% 650px;
+  background: url("../../image/mapBg.png") no-repeat 50% 650px;
 }
 
 .createBox {

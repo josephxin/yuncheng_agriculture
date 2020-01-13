@@ -2,7 +2,7 @@
 .App {
 	width: 1920px;
 	height: 1080px;
-	background: url("/static/image/bg.png") no-repeat center;
+	background: url("./image/bg.png") no-repeat center;
 	position: relative;
 }
 
@@ -31,7 +31,7 @@
 .nav-wrap .nav-list li {
 	width: 140px;
 	height: 42px;
-	background: url('/static/image/icon2.png') no-repeat;
+	background: url('./image/icon2.png') no-repeat;
 	text-align: center;
 	line-height: 42px;
 	margin-left: 5px;
@@ -40,11 +40,11 @@
 }
 
 .nav-wrap .nav-list li:first-child {
-	background: url('/static/image/icon1.png') no-repeat;
+	background: url('./image/icon1.png') no-repeat;
 }
 
 .nav-wrap .nav-list li:last-child {
-	background: url('/static/image/icon3.png') no-repeat;
+	background: url('./image/icon3.png') no-repeat;
 }
 
 .nav-wrap .nav-list li div {
@@ -78,56 +78,56 @@
 	left: 18px;
 	width: 25px;
 	height: 22px;
-	background: url('/static/image/nav1.png');
+	background: url('./image/nav1.png');
 	background-repeat: no-repeat;
 }
 
 .nav-wrap .nav-list li:nth-child(2) div i {
-	background: url('/static/image/nav2.png');
+	background: url('./image/nav2.png');
 }
 
 .nav-wrap .nav-list li:nth-child(3) div i {
-	background: url('/static/image/nav3.png');
+	background: url('./image/nav3.png');
 }
 
 .nav-wrap .nav-list li:nth-child(4) div i {
-	background: url('/static/image/nav4.png');
+	background: url('./image/nav4.png');
 }
 
 .nav-wrap .nav-list li:nth-child(5) div i {
-	background: url('/static/image/nav5.png');
+	background: url('./image/nav5.png');
 }
 
 .nav-wrap .nav-list li:nth-child(6) div i {
-	background: url('/static/image/nav6.png');
+	background: url('./image/nav6.png');
 }
 
 .nav-wrap .nav-list li:nth-child(7) div i {
-	background: url('/static/image/nav7.png');
+	background: url('./image/nav7.png');
 }
 
 .nav-wrap .nav-list li:nth-child(8) div i {
-	background: url('/static/image/nav8.png');
+	background: url('./image/nav8.png');
 	left: -1px;
 }
 
 .nav-wrap .nav-list li:nth-child(9) div i {
-	background: url('/static/image/nav9.png');
+	background: url('./image/nav9.png');
 	left: 2px;
 }
 
 .nav-wrap .nav-list li:nth-child(1).current {
-	background: url('/static/image/icon1-select.png');
+	background: url('./image/icon1-select.png');
 }
 
 .nav-wrap .nav-list li.current,
 .nav-wrap .nav-list li:hover {
-	background: url('/static/image/icon2-select.png');
+	background: url('./image/icon2-select.png');
 	transform: scale(1.05);
 }
 
 .nav-wrap .nav-list li:last-child.current {
-	background: url('/static/image/icon3-select.png');
+	background: url('./image/icon3-select.png');
 }
 
 .nav-wrap .nav-list li.current div {
@@ -135,39 +135,39 @@
 }
 
 .nav-wrap .nav-list li:nth-child(1).current div i {
-	background: url('/static/image/nav1-select.png');
+	background: url('./image/nav1-select.png');
 }
 
 .nav-wrap .nav-list li:nth-child(2).current div i {
-	background: url('/static/image/nav2-select.png');
+	background: url('./image/nav2-select.png');
 }
 
 .nav-wrap .nav-list li:nth-child(3).current div i {
-	background: url('/static/image/nav3-select.png');
+	background: url('./image/nav3-select.png');
 }
 
 .nav-wrap .nav-list li:nth-child(4).current div i {
-	background: url('/static/image/nav4-select.png');
+	background: url('./image/nav4-select.png');
 }
 
 .nav-wrap .nav-list li:nth-child(5).current div i {
-	background: url('/static/image/nav5-select.png');
+	background: url('./image/nav5-select.png');
 }
 
 .nav-wrap .nav-list li:nth-child(6).current div i {
-	background: url('/static/image/nav6-select.png');
+	background: url('./image/nav6-select.png');
 }
 
 .nav-wrap .nav-list li:nth-child(7).current div i {
-	background: url('/static/image/nav7-select.png');
+	background: url('./image/nav7-select.png');
 }
 
 .nav-wrap .nav-list li:nth-child(8).current div i {
-	background: url('/static/image/nav8-select.png');
+	background: url('./image/nav8-select.png');
 }
 
 .nav-wrap .nav-list li:nth-child(9).current div i {
-	background: url('/static/image/nav9-select.png');
+	background: url('./image/nav9-select.png');
 }
 
 .nav-wrap .nav-list li.current div::after {

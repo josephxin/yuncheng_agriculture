@@ -9,7 +9,7 @@
     line-height: 50px;
 }
 .contentBox{
-    background:url('/static/image/panel-border.png') no-repeat;
+    background:url('../../image/panel-border.png') no-repeat;
 }
 .contentBox h3{
     font-size: 22px;
