@@ -129,7 +129,7 @@ class App extends Component {
           <Popconfirm placement="rightBottom" title={'确定退出吗？'} onConfirm={me.logoutHandle.bind(me)} okText="确定" cancelText="取消">
             <div className={'logout'} style={{display: (pageName=='login' ? 'none' : 'block')}}>退出</div>
           </Popconfirm>
-          <div className={'nav-wrap'} style={{display:(pageName=='login' ? 'none' : 'block')}}>
+          <div className={'nav-wrap'} style={{display:(pageName=='login' ? 'none':'block')}}>
             <ul className={'nav-list'}>
               <li onClick={me.click.bind(this, 'homepage')} className={pageName === 'homepage' ? 'current' : ''}>
                 <div>
@@ -189,9 +189,7 @@ class App extends Component {
           </div>
           <div>
 						<Route exact path='/' 
-							render={()=> (
-								<Redirect to='/login' />
-							)}
+							component={IndexPage}
 						/>
             <Route path='/login'
               component={LoginPage}
